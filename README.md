@@ -1,1 +1,0 @@
-# gambye.github.io
