@@ -1,6 +1,10 @@
-*, *:before, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.be-re { font-family: "BebasNeue-regular", sans-serif; }
 
-body { margin: 0; padding: 0; }
+.la-bl, .main-page .logo__text, .main-page .menu, .main-page .title__text, .main-page .title__number { font-family: "Lato-Black", sans-serif; }
+
+.la-me { font-family: "Lato-Medium", sans-serif; }
+
+.la-re { font-family: "Lato-Regular", sans-serif; }
 
 @font-face { font-family: "BebasNeue-regular"; src: url("../fonts/BebasNeue Regular.otf"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "Lato-Black"; src: url("../fonts/Lato-Black.ttf"); font-weight: normal; font-style: normal; }
@@ -8,7 +12,18 @@ body { margin: 0; padding: 0; }
 @font-face { font-family: "Lato-regular"; src: url("../fonts/Lato-Regular.ttf"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "Lato-Semibold"; src: url("../fonts/Lato-Semibold.ttf"); font-weight: normal; font-style: normal; }
 .main-page { background: url("../img/main-bg.png") no-repeat center; background-size: cover; color: #fff; text-align: center; height: 85vh; }
-.main-page .menu__link { display: inline-block; }
+.main-page .row { max-width: 1200px; padding-top: 15px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.main-page .logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 157px; cursor: pointer; text-align: center; }
+.main-page .logo__pic { height: 30px; width: 157px; }
+.main-page .logo__text { text-transform: uppercase; font-style: 15px; letter-spacing: 1.75px; margin-top: 7px; }
+.main-page .menu { text-transform: uppercase; color: #fff; font-size: 17px; padding: 0; }
+.main-page .menu__link { display: inline-block; text-decoration: none; margin-left: 25px; cursor: pointer; color: #fff; }
+.main-page .menu__link:hover { color: #000; background-color: #ffc61a; border: 1px solid #ffc61a; border-radius: 20px; border-color: #ffc61a; padding: 2px 15px; }
+.main-page .title { margin-top: 2%; }
+.main-page .title__text { color: #ffc61a; text-transform: uppercase; font-size: 36px; }
+.main-page .title__number { color: #fff; text-transform: uppercase; font-size: 72px; text-decoration: none; }
 
-.yellow { height: 15vh; width: 100%; background-color: #ffc61a; }
-.yellow .car { position: absolute; bottom: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 700px; }
+.yellow { position: relative; height: 15vh; width: 100%; background-color: #ffc61a; }
+.yellow .car { background: url("../img/main-car.png") no-repeat center; background-size: cover; position: absolute; bottom: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 600px; height: 350px; }
+
+.about { height: 50vh; background-color: #ffc61a; }
