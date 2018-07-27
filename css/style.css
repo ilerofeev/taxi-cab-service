@@ -1,29 +1,46 @@
 .be-re { font-family: "BebasNeue-regular", sans-serif; }
 
-.la-bl, .main-page .logo__text, .main-page .menu, .main-page .title__text, .main-page .title__number { font-family: "Lato-Black", sans-serif; }
+.be-bo, section.about .about-service .read-more, section.about .book-a-cab__form .submit { font-family: "BebasNeue-bold", sans-serif; }
 
-.la-me { font-family: "Lato-Medium", sans-serif; }
+.la-bl, section.main-page .logo__text, section.main-page .menu, section.main-page .title__text, section.main-page .title__number, section.about .about-service a, section.about .about-service h2, section.about .about-service h3, section.about .book-a-cab__form h3 { font-family: "Lato-Black", sans-serif; }
 
-.la-re { font-family: "Lato-Regular", sans-serif; }
+.la-me, section.about .book-a-cab__form input { font-family: "Lato-Medium", sans-serif; }
+
+.la-re, section.about .about-service p { font-family: "Lato-Regular", sans-serif; }
 
 @font-face { font-family: "BebasNeue-regular"; src: url("../fonts/BebasNeue Regular.otf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "BebasNeue-bold"; src: url("../fonts/bebas-neue-bold.ttf"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "Lato-Black"; src: url("../fonts/Lato-Black.ttf"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "Lato-Medium"; src: url("../fonts/Lato-Medium.ttf"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "Lato-regular"; src: url("../fonts/Lato-Regular.ttf"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "Lato-Semibold"; src: url("../fonts/Lato-Semibold.ttf"); font-weight: normal; font-style: normal; }
-.main-page { background: url("../img/main-bg.png") no-repeat center; background-size: cover; color: #fff; text-align: center; height: 85vh; }
-.main-page .row { max-width: 1200px; padding-top: 15px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-.main-page .logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 157px; cursor: pointer; text-align: center; }
-.main-page .logo__pic { height: 30px; width: 157px; }
-.main-page .logo__text { text-transform: uppercase; font-style: 15px; letter-spacing: 1.75px; margin-top: 7px; }
-.main-page .menu { text-transform: uppercase; color: #fff; font-size: 17px; padding: 0; }
-.main-page .menu__link { display: inline-block; text-decoration: none; margin-left: 25px; cursor: pointer; color: #fff; }
-.main-page .menu__link:hover { color: #000; background-color: #ffc61a; border: 1px solid #ffc61a; border-radius: 20px; border-color: #ffc61a; padding: 2px 15px; }
-.main-page .title { margin-top: 2%; }
-.main-page .title__text { color: #ffc61a; text-transform: uppercase; font-size: 36px; }
-.main-page .title__number { color: #fff; text-transform: uppercase; font-size: 72px; text-decoration: none; }
+section.main-page { background: url("../img/main-bg.png") no-repeat center; background-size: cover; color: #fff; text-align: center; height: 85vh; }
+section.main-page .row { max-width: 1200px; padding-top: 15px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+section.main-page .logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 157px; cursor: pointer; text-align: center; }
+section.main-page .logo__pic { height: 30px; width: 157px; }
+section.main-page .logo__text { text-transform: uppercase; font-style: 15px; letter-spacing: 1.75px; margin-top: 7px; }
+section.main-page .menu { text-transform: uppercase; color: #fff; font-size: 17px; padding: 0; }
+section.main-page .menu__link { display: inline-block; text-decoration: none; margin-left: 25px; cursor: pointer; color: #fff; }
+section.main-page .menu__link:hover { color: #000; background-color: #ffc61a; border: 1px solid #ffc61a; border-radius: 20px; border-color: #ffc61a; padding: 2px 15px; }
+section.main-page .title { margin-top: 2%; }
+section.main-page .title__text { color: #ffc61a; text-transform: uppercase; font-size: 36px; }
+section.main-page .title__number { color: #fff; text-transform: uppercase; font-size: 72px; text-decoration: none; }
 
-.yellow { position: relative; height: 15vh; width: 100%; background-color: #ffc61a; }
-.yellow .car { background: url("../img/main-car.png") no-repeat center; background-size: cover; position: absolute; bottom: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 600px; height: 350px; }
+section.yellow { position: relative; height: 15vh; width: 100%; background-color: #ffc61a; }
+section.yellow .car { background: url("../img/main-car.png") no-repeat center; background-size: cover; position: absolute; bottom: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 600px; height: 350px; }
 
-.about { height: 50vh; background-color: #ffc61a; }
+section.about { background-color: #ffc61a; padding-bottom: 80px; padding-top: 40px; }
+section.about .about-service { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+section.about .about-service a, section.about .about-service h2, section.about .about-service h3 { text-transform: uppercase; color: #101010; }
+section.about .about-service h3 { font-size: 35px; }
+section.about .about-service h2 { font-size: 50px; color: #000; margin-bottom: 30px; }
+section.about .about-service p { font-size: 18px; }
+section.about .about-service .read-more { margin-top: 40px; border-radius: 8px; color: #fff; font-size: 30px; width: 166px; height: 50px; background-color: #000; text-align: center; text-decoration: none; }
+section.about .book-a-cab { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+section.about .book-a-cab__form { padding: 0; -ms-flex-item-align: end; align-self: flex-end; width: 422px; background-color: #fff; }
+section.about .book-a-cab__form h3 { padding: 20px 0; padding-left: 37px; background-color: #171717; color: #fff; text-transform: uppercase; font-size: 34px; }
+section.about .book-a-cab__form h3 span { color: #ffc61a; }
+section.about .book-a-cab__form input { outline: none; font-size: 20px; color: #000; width: 43%; border-style: none; border-bottom: 3px solid #e4e4e4; margin-right: 23px; margin-bottom: 38px; }
+section.about .book-a-cab__form input[class="Choose"] { width: 93.2%; }
+section.about .book-a-cab__form .submit { background-color: #131313; color: #fff; width: 93.2%; padding: 4px 150px; border-radius: 8px; text-transform: uppercase; font-size: 30px; margin-bottom: 25px; }
+section.about .book-a-cab__inputs { padding-left: 30px; padding-top: 20px; }
