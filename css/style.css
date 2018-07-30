@@ -1,13 +1,13 @@
 @charset "UTF-8";
 .be-re { font-family: "BebasNeue-regular", sans-serif; }
 
-.be-bo, section.about .about-service .read-more, section.about .book-a-cab__form .submit, section.tariffs .container .row .tariff .read-more { font-family: "BebasNeue-bold", sans-serif; }
+.be-bo, section.about .book-a-cab__form .submit { font-family: "BebasNeue-bold", sans-serif; }
 
-.la-bl, section.main-page .logo__text, section.main-page .menu, section.main-page .title__text, section.main-page .title__number, section.about .about-service a, section.about .about-service h2, section.about .about-service h3, section.about .book-a-cab__form h3, section.tariffs .container h3, section.tariffs .container h2, section.tariffs .container .row .tariff__name { font-family: "Lato-Black", sans-serif; }
+.la-bl, section.main-page .logo__text, section.main-page .menu, section.main-page .title__text, section.main-page .title__number, section.about .about-service a, section.about .about-service h2, section.about .about-service h3, section.about .book-a-cab__form h3, section.tariffs .container h3, section.tariffs .container h2, section.tariffs .container .row .tariff__name, section.choose-us .container h3, section.choose-us .container h2, section.choose-us .container .advantages__name { font-family: "Lato-Black", sans-serif; }
 
 .la-me, section.about .book-a-cab__form input { font-family: "Lato-Medium", sans-serif; }
 
-.la-re, section.about .about-service p { font-family: "Lato-Regular", sans-serif; }
+.la-re, section.about .about-service p, section.choose-us .container .advantages__descr { font-family: "Lato-Regular", sans-serif; }
 
 @font-face { font-family: "BebasNeue-regular"; src: url("../fonts/BebasNeue Regular.otf"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "BebasNeue-bold"; src: url("../fonts/bebas-neue-bold.ttf"); font-weight: normal; font-style: normal; }
@@ -30,13 +30,15 @@ section.main-page .title__number { color: #fff; text-transform: uppercase; font-
 section.yellow { position: relative; height: 15vh; width: 100%; background-color: #ffc61a; }
 section.yellow .car { background: url("../img/main-car.png") no-repeat center; background-size: cover; position: absolute; bottom: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 600px; height: 350px; }
 
+.read-more { display: block !important; margin-top: 40px; border-radius: 8px; color: #fff; font-size: 30px; font-family: "BebasNeue-bold", sans-serif !important; width: 166px; height: 50px; background-color: #000; text-align: center; text-decoration: none !important; }
+
 section.about { background-color: #ffc61a; padding-bottom: 80px; padding-top: 40px; }
 section.about .about-service { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+section.about .about-service .read-more { margin-right: auto; color: #fff; }
 section.about .about-service a, section.about .about-service h2, section.about .about-service h3 { text-transform: uppercase; color: #101010; }
 section.about .about-service h3 { font-size: 35px; }
 section.about .about-service h2 { font-size: 50px; color: #000; margin-bottom: 30px; }
 section.about .about-service p { font-size: 18px; }
-section.about .about-service .read-more { margin-top: 40px; border-radius: 8px; color: #fff; font-size: 30px; width: 166px; height: 50px; background-color: #000; text-align: center; text-decoration: none; }
 section.about .book-a-cab { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 section.about .book-a-cab__form { padding: 0; -ms-flex-item-align: end; align-self: flex-end; width: 422px; background-color: #fff; }
 section.about .book-a-cab__form h3 { padding: 20px 0; padding-left: 37px; background-color: #171717; color: #fff; text-transform: uppercase; font-size: 34px; }
@@ -48,22 +50,40 @@ section.about .book-a-cab__form .submit { background-color: #131313; color: #fff
 section.about .book-a-cab__inputs { padding-left: 30px; padding-top: 20px; }
 
 section.tariffs { padding-top: 65px; padding-bottom: 65px; }
-section.tariffs .container { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; }
+section.tariffs .container { text-align: center; }
 section.tariffs .container h3 { color: #ffc61a; font-size: 35px; margin-bottom: 0; }
 section.tariffs .container h2 { color: #000; font-size: 44px; padding: 0; margin-top: -10px; margin-bottom: 125px; }
 section.tariffs .container h2, section.tariffs .container h3, section.tariffs .container h4, section.tariffs .container a { text-transform: uppercase; }
 section.tariffs .container .row .tariff { background-color: #f5f4f2; padding: 124px 35px 25px 35px; width: 95%; position: relative; overflow-bottom: hidden; }
 section.tariffs .container .row .tariff-overlay { padding: 0; }
-section.tariffs .container .row .tariff--one { margin-right: auto; }
-section.tariffs .container .row .tariff--two { margin-left: auto; margin-right: auto; }
-section.tariffs .container .row .tariff--three { margin-left: auto; }
+section.tariffs .container .row .tariff-overlay:nth-child(1) .tariff { margin-right: auto; }
+section.tariffs .container .row .tariff-overlay:nth-child(2) .tariff { margin-left: auto; margin-right: auto; }
+section.tariffs .container .row .tariff-overlay:nth-child(3) .tariff { margin-left: auto; }
 section.tariffs .container .row .tariff__name { font-size: 30px; color: #000; }
 section.tariffs .container .row .tariff__description { font-size: 18px; color: #101010; }
+section.tariffs .container .row .tariff .read-more { margin-left: auto; margin-right: auto; color: #000; background-color: #ffc61a; }
 section.tariffs .container .row .tariff__img { position: absolute; width: 100%; height: 178px; background: url("../img/tariffs-car.png") no-repeat center; background-size: cover; top: -20%; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
-section.tariffs .container .row .tariff .read-more { padding-top: 3px; margin: 0 auto; display: block; margin-top: 40px; border-radius: 8px; color: #000; font-size: 30px; width: 166px; height: 50px; background-color: #ffc61a; text-align: center; text-decoration: none; }
 section.tariffs .container .row .tariff:before { position: absolute; bottom: 0; right: 0; content: ""; border-bottom: 80px solid #1b1b1b; border-left: 80px solid transparent; display: none; }
 section.tariffs .container .row .tariff:after { position: absolute; bottom: 2px; right: 8px; z-index: 1; font-size: 30px; content: ""; color: #ffc61a; font-family: "FontAwesome"; display: none; }
 section.tariffs .container .row .tariff:hover { background-color: #ffc61a; }
 section.tariffs .container .row .tariff:hover .tariff__price { color: #131313; }
 section.tariffs .container .row .tariff:hover .read-more { color: #fff; background-color: #1b1b1b; }
 section.tariffs .container .row .tariff:hover::after, section.tariffs .container .row .tariff:hover::before { display: block; }
+
+section.choose-us { min-height: 100vh; background: url("../img/choose-bg.png") no-repeat center; background-size: cover; }
+section.choose-us .container { padding-top: 50px; text-align: center; padding-bottom: 80px; }
+section.choose-us .container .read-more { color: #000; background-color: #ffc61a; margin-left: auto; margin-right: auto; margin-top: 80px; }
+section.choose-us .container h3 { color: #ffc61a; font-size: 35px; margin-bottom: 0; }
+section.choose-us .container h2 { color: #fff; font-size: 44px; padding: 0; margin-bottom: 70px; }
+section.choose-us .container h2, section.choose-us .container h3, section.choose-us .container h4, section.choose-us .container a { text-transform: uppercase; }
+section.choose-us .container .advantages { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; color: #fff; }
+section.choose-us .container .advantages__col-one, section.choose-us .container .advantages__col-two { width: 484px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; text-align: left; }
+section.choose-us .container .advantages__item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+section.choose-us .container .advantages__item:nth-child(1) { margin-bottom: 84px; }
+section.choose-us .container .advantages__item .advantages__icon { min-width: 90px; min-height: 90px; background-color: #ffc61a; border-radius: 50%; margin-right: 28px; position: relative; }
+section.choose-us .container .advantages__item .advantages__icon:after { position: absolute; top: 23px; right: 30px; font-size: 30px; content: ""; color: #000; display: block; font-family: "FontAwesome"; }
+section.choose-us .container .advantages__item .adv-icon-two:after { content: ""; right: 27px; }
+section.choose-us .container .advantages__item .adv-icon-three:after { right: 31px; content: ""; }
+section.choose-us .container .advantages__item .adv-icon-four:after { content: ""; }
+section.choose-us .container .advantages__descr { font-size: 18px; }
+section.choose-us .container .advantages__name { width: 236px; display: block; font-size: 25px; text-transform: uppercase; color: #ffc61a; margin-bottom: 24px; }
