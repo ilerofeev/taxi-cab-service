@@ -63,6 +63,10 @@ html {
   max-width: 1200px;
 }
 
+.row {
+  margin: 0;
+}
+
 .read-more {
   display: block !important;
   margin-top: 5rem;
@@ -89,6 +93,8 @@ section#main-page {
   position: relative;
 }
 section#main-page .row {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 102.5%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -367,6 +373,7 @@ section#tariffs .container h2, section#tariffs .container h3, section#tariffs .c
   text-transform: uppercase;
 }
 section#tariffs .container .row .tariff {
+  overflow: hidden;
   background-color: #f5f4f2;
   padding: 6.88rem 2rem 1.38rem 2rem;
   width: 95%;
@@ -899,6 +906,9 @@ footer p {
     font-size: 12px;
   }
 
+  #main-page .row {
+    margin: 0;
+  }
   #main-page .title__text {
     margin-bottom: 0.2rem !important;
   }
