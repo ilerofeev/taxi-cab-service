@@ -3,19 +3,19 @@
   font-family: "BebasNeue-regular", sans-serif;
 }
 
-.be-bo, section.about .book-a-cab__form .submit {
+.be-bo, section#about .book-a-cab__form .submit {
   font-family: "BebasNeue-bold", sans-serif;
 }
 
-.la-bl, section.main-page .row .logo__text, section.main-page .row .menu, section.main-page .title, section.about .about-service a, section.about .about-service h2, section.about .about-service h3, section.about .book-a-cab__form h3, section.tariffs .container h3, section.tariffs .container h2, section.tariffs .container .row .tariff__name, section.choose-us .container h3, section.choose-us .container h2, section.choose-us .container .advantages__name, section.download .container h3, section.download .container h2, section.download .container .row .download-left h5, section.comments .container h3, section.comments .container h2, section.comments .container .comments-block .comment-one .author__name, section.comments .container .comments-block .comment-two .author__name, section.comments .container .comments-block .comment-one .author__status, section.comments .container .comments-block .comment-two .author__status, section.your-call h3, section.your-call .title__number, section.about-download-contact .container .row .adc__item .adc__title {
+.la-bl, section#main-page .row .logo__text, section#main-page .row .menu, section#main-page .title, section#about .about-service a, section#about .about-service h2, section#about .about-service h3, section#about .book-a-cab__form h3, section#tariffs .container h3, section#tariffs .container h2, section#tariffs .container .row .tariff__name, section#features .container h3, section#features .container h2, section#features .container .advantages__name, section#download .container h3, section#download .container h2, section#download .container .row .download-left h5, section#feedback .container h3, section#feedback .container h2, section#feedback .container .feedback-block .comment-one .author__name, section#feedback .container .feedback-block .comment-two .author__name, section#feedback .container .feedback-block .comment-one .author__status, section#feedback .container .feedback-block .comment-two .author__status, section#your-call h3, section#your-call .title__number, section#contacts .container .row .adc__item .adc__title {
   font-family: "Lato-Black", sans-serif;
 }
 
-.la-me, section.about .book-a-cab__form input {
+.la-me, section#about .book-a-cab__form input {
   font-family: "Lato-Medium", sans-serif;
 }
 
-.la-re, section.about .about-service p, section.choose-us .container .advantages__descr, section.download .container .row .download-left p, section.comments .container .comments-block .comment-one, section.comments .container .comments-block .comment-two, section.about-download-contact .container .row .adc__item .adc__text, section.about-download-contact .container .row .adc__item .adc__android, section.about-download-contact .container .row .adc__item .adc__apple, footer {
+.la-re, section#about .about-service p, section#features .container .advantages__descr, section#download .container .row .download-left p, section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two, section#contacts .container .row .adc__item .adc__text, section#contacts .container .row .adc__item .adc__android, section#contacts .container .row .adc__item .adc__apple, footer {
   font-family: "Lato-Regular", sans-serif;
 }
 
@@ -55,53 +55,52 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
-  padding: 0;
-  margin: 0;
+html {
   font-size: 18px;
 }
 
 .container {
   max-width: 1200px;
-}
-
-.container-fluid {
-  padding-left: 4.44rem;
-  padding-right: 4.72rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .read-more {
   display: block !important;
-  margin-top: 40px;
-  border-radius: 8px;
+  margin-top: 5rem;
+  border-radius: 0.44rem;
   color: #fff;
   font-size: 1.66 rem;
   font-family: "BebasNeue-bold", sans-serif !important;
-  width: 166px;
-  height: 50px;
+  width: 9.22rem;
+  height: 2.77rem;
   background-color: #000;
   text-align: center;
   text-decoration: none !important;
 }
 
-section.main-page {
+section#main-page {
   background: url("../img/main-bg.png") no-repeat center top/cover;
   height: 100vh;
   min-height: 600px;
   color: #fff;
   text-transform: uppercase;
-  padding-top: 25px;
+  padding-top: 1.38rem;
   padding-bottom: 0;
+  text-align: center;
+  position: relative;
 }
-section.main-page .row {
+section#main-page .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
-section.main-page .row .logo {
+section#main-page .row nav {
+  text-align: right;
+}
+section#main-page .row .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,76 +109,158 @@ section.main-page .row .logo {
       -ms-flex-direction: column;
           flex-direction: column;
   cursor: pointer;
+  width: 6.85rem;
+  margin-right: auto;
+}
+section#main-page .row .logo__img {
+  width: 100%;
+  height: auto;
+  padding-right: 0.02rem;
+}
+section#main-page .row .logo__text {
+  font-size: 0.7rem;
+  letter-spacing: 1.3px;
+  margin-top: 0.38rem;
+}
+section#main-page .row .navigation__close {
+  position: absolute;
+  top: 0.8rem;
+  right: 2.3rem;
+  font-size: 3rem;
+}
+section#main-page .row .navigation__close:hover {
+  cursor: pointer;
+}
+section#main-page .row .navigation__mobile {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #ffc61a;
+  height: 100vh;
+  width: 100%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-section.main-page .row .logo__img {
-  height: 30px;
-  width: 157px;
+section#main-page .row .navigation__mobile ul {
+  height: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
 }
-section.main-page .row .logo__text {
-  font-size: 1rem;
-  padding-left: 1px;
-  letter-spacing: 1.75px;
-  margin-top: 7px;
-}
-section.main-page .row .menu {
-  font-size: 1rem;
-}
-section.main-page .row .menu li {
-  display: inline-block;
-}
-section.main-page .row .menu__link {
+section#main-page .row .navigation__mobile ul a {
+  display: block;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 2rem;
   text-decoration: none;
-  margin-left: 25px;
+  letter-spacing: 0.05rem;
+}
+section#main-page .row .navigation__mobile--active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  z-index: 2;
+}
+section#main-page .row .navigation__mobile--active a:hover {
+  color: #fff;
+}
+section#main-page .row .menu {
+  text-align: center;
+  padding: 0;
+  margin: auto 0;
+  font-size: 1rem;
+}
+section#main-page .row .menu__link {
+  text-decoration: none;
+  padding-left: 0.89rem;
+  padding-right: 0.89rem;
   cursor: pointer;
   color: #fff;
 }
-section.main-page .row .menu__link:hover {
+section#main-page .row .menu__link:hover {
   color: #000;
   background-color: #ffc61a;
   border: 1px solid #ffc61a;
-  border-radius: 20px;
-  padding: 2px 15px;
+  border-radius: 1.1rem;
+  padding: 0.11rem 0.83rem;
 }
-section.main-page .title {
+section#main-page .row .menu li {
+  display: inline-block;
+}
+section#main-page .row .menu li:nth-child(1) .menu__link {
+  margin-left: 0;
+}
+section#main-page .row .nav-link {
+  padding: 0;
+  display: none;
+  position: absolute;
+  top: 1.9rem;
+  right: 2.1rem;
+  font-size: 1.9rem;
+  width: 1.7rem;
+  height: 1.8rem;
+}
+section#main-page .row .nav-link:hover {
+  cursor: pointer;
+}
+section#main-page .title {
   text-align: center;
-  margin-top: 2.5%;
-  margin-bottom: auto;
+  margin-top: 2.8rem;
 }
-section.main-page .title__text {
+section#main-page .title__text {
   color: #ffc61a;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: -10px;
 }
-section.main-page .title__number {
-  margin-top: -15px;
+section#main-page .title__number {
   color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
   text-decoration: none;
 }
-section.main-page .car {
+section#main-page .car {
   position: absolute;
   bottom: 0;
   height: 15vh;
   width: 100%;
   background-color: #ffc61a;
 }
-section.main-page .car .car-img {
+section#main-page .car .car-img {
   background: url("../img/main-car.png") no-repeat center/cover;
   position: absolute;
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 600px;
-  height: 350px;
+  width: 30rem;
+  height: 17.7rem;
 }
 
-section.about {
+section#about {
   background-color: #ffc61a;
-  padding-bottom: 80px;
-  padding-top: 40px;
+  padding-bottom: 4.44rem;
+  padding-top: 2.22rem;
+  margin-bottom: 0.2rem;
 }
-section.about .about-service {
+section#about .about-service {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,26 +269,26 @@ section.about .about-service {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-section.about .about-service .read-more {
+section#about .about-service .read-more {
   margin-right: auto;
   color: #fff;
 }
-section.about .about-service a, section.about .about-service h2, section.about .about-service h3 {
+section#about .about-service a, section#about .about-service h2, section#about .about-service h3 {
   text-transform: uppercase;
   color: #101010;
 }
-section.about .about-service h3 {
-  font-size: 35px;
+section#about .about-service h3 {
+  font-size: 2rem;
 }
-section.about .about-service h2 {
-  font-size: 50px;
+section#about .about-service h2 {
+  font-size: 2.77rem;
   color: #000;
-  margin-bottom: 30px;
+  margin-bottom: 1.66rem;
 }
-section.about .about-service p {
-  font-size: 18px;
+section#about .about-service p {
+  font-size: 1rem;
 }
-section.about .book-a-cab {
+section#about .book-a-cab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,115 +297,115 @@ section.about .book-a-cab {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-section.about .book-a-cab__form {
+section#about .book-a-cab__form {
   padding: 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  width: 422px;
+  width: 23.4rem;
   background-color: #fff;
 }
-section.about .book-a-cab__form h3 {
-  padding: 20px 0;
-  padding-left: 37px;
+section#about .book-a-cab__form h3 {
+  padding: 1.11rem 0;
+  padding-left: 2rem;
   background-color: #171717;
   color: #fff;
   text-transform: uppercase;
-  font-size: 34px;
+  font-size: 1.88rem;
 }
-section.about .book-a-cab__form h3 span {
+section#about .book-a-cab__form h3 span {
   color: #ffc61a;
 }
-section.about .book-a-cab__form input {
+section#about .book-a-cab__form input {
   outline: none;
-  font-size: 20px;
+  font-size: 1.11rem;
   color: #000;
   width: 43%;
   border-style: none;
   border-bottom: 3px solid #e4e4e4;
-  margin-right: 23px;
-  margin-bottom: 38px;
+  margin-right: 1.27rem;
+  margin-bottom: 2.05rem;
 }
-section.about .book-a-cab__form input[class="Choose"] {
+section#about .book-a-cab__form input[class="Choose"] {
   width: 93.2%;
 }
-section.about .book-a-cab__form input[type="Submit"] {
+section#about .book-a-cab__form input[type="Submit"] {
   border-width: 0;
 }
-section.about .book-a-cab__form .submit {
+section#about .book-a-cab__form .submit {
   background-color: #131313;
   color: #fff;
   width: 93.2%;
-  padding: 4px 150px;
-  border-radius: 8px;
+  padding: 0.22rem 8.33rem;
+  border-radius: 0.44rem;
   text-transform: uppercase;
-  font-size: 30px;
-  margin-bottom: 25px;
+  font-size: 1.66rem;
+  margin-bottom: 1.38rem;
 }
-section.about .book-a-cab__inputs {
-  padding-left: 30px;
-  padding-top: 20px;
+section#about .book-a-cab__inputs {
+  padding-left: 1.66rem;
+  padding-top: 1.11rem;
 }
 
-section.tariffs {
-  padding-top: 65px;
-  padding-bottom: 65px;
+section#tariffs {
+  padding-top: 3.61rem;
+  padding-bottom: 3.61rem;
 }
-section.tariffs .container {
+section#tariffs .container {
   text-align: center;
 }
-section.tariffs .container h3 {
+section#tariffs .container h3 {
   color: #ffc61a;
-  font-size: 35px;
+  font-size: 2 rem;
   margin-bottom: 0;
 }
-section.tariffs .container h2 {
+section#tariffs .container h2 {
   color: #000;
-  font-size: 44px;
+  font-size: 2.44rem;
   padding: 0;
-  margin-top: -10px;
-  margin-bottom: 125px;
+  margin-top: -0.55rem;
+  margin-bottom: 6.94rem;
 }
-section.tariffs .container h2, section.tariffs .container h3, section.tariffs .container h4, section.tariffs .container a {
+section#tariffs .container h2, section#tariffs .container h3, section#tariffs .container h4, section#tariffs .container a {
   text-transform: uppercase;
 }
-section.tariffs .container .row .tariff {
+section#tariffs .container .row .tariff {
   background-color: #f5f4f2;
-  padding: 124px 35px 25px 35px;
+  padding: 6.88rem 2rem 1.38rem 2rem;
   width: 95%;
   position: relative;
   overflow-bottom: hidden;
 }
-section.tariffs .container .row .tariff-overlay {
+section#tariffs .container .row .tariff-overlay {
   padding: 0;
 }
-section.tariffs .container .row .tariff-overlay:nth-child(1) .tariff {
+section#tariffs .container .row .tariff-overlay:nth-child(1) .tariff {
   margin-right: auto;
 }
-section.tariffs .container .row .tariff-overlay:nth-child(2) .tariff {
+section#tariffs .container .row .tariff-overlay:nth-child(2) .tariff {
   margin-left: auto;
   margin-right: auto;
 }
-section.tariffs .container .row .tariff-overlay:nth-child(3) .tariff {
+section#tariffs .container .row .tariff-overlay:nth-child(3) .tariff {
   margin-left: auto;
 }
-section.tariffs .container .row .tariff__name {
-  font-size: 30px;
+section#tariffs .container .row .tariff__name {
+  font-size: 1.66rem;
   color: #000;
 }
-section.tariffs .container .row .tariff__description {
-  font-size: 18px;
+section#tariffs .container .row .tariff__description {
+  font-size: 1rem;
   color: #101010;
 }
-section.tariffs .container .row .tariff .read-more {
+section#tariffs .container .row .tariff .read-more {
   margin-left: auto;
   margin-right: auto;
   color: #000;
   background-color: #ffc61a;
 }
-section.tariffs .container .row .tariff__img {
+section#tariffs .container .row .tariff__img {
   position: absolute;
   width: 100%;
-  height: 178px;
+  height: 10rem;
   background: url("../img/tariffs-car.png") no-repeat center;
   background-size: cover;
   top: -20%;
@@ -332,72 +413,72 @@ section.tariffs .container .row .tariff__img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-section.tariffs .container .row .tariff:before {
+section#tariffs .container .row .tariff:before {
   position: absolute;
   bottom: 0;
   right: 0;
   content: "";
-  border-bottom: 80px solid #1b1b1b;
-  border-left: 80px solid transparent;
+  border-bottom: 4.44rem solid #1b1b1b;
+  border-left: 4.44rem solid transparent;
   display: none;
 }
-section.tariffs .container .row .tariff:after {
+section#tariffs .container .row .tariff:after {
   position: absolute;
   bottom: 2px;
   right: 8px;
   z-index: 1;
-  font-size: 30px;
+  font-size: 1.66rem;
   content: "";
   color: #ffc61a;
   font-family: "FontAwesome";
   display: none;
 }
-section.tariffs .container .row .tariff:hover {
+section#tariffs .container .row .tariff:hover {
   background-color: #ffc61a;
 }
-section.tariffs .container .row .tariff:hover .tariff__price {
+section#tariffs .container .row .tariff:hover .tariff__price {
   color: #131313;
 }
-section.tariffs .container .row .tariff:hover .read-more {
+section#tariffs .container .row .tariff:hover .read-more {
   color: #fff;
   background-color: #1b1b1b;
 }
-section.tariffs .container .row .tariff:hover::after, section.tariffs .container .row .tariff:hover::before {
+section#tariffs .container .row .tariff:hover::after, section#tariffs .container .row .tariff:hover::before {
   display: block;
 }
 
-section.choose-us {
+section#features {
   min-height: 100vh;
   background: url("../img/choose-bg.png") no-repeat center;
   background-size: cover;
 }
-section.choose-us .container {
-  padding-top: 50px;
+section#features .container {
+  padding-top: 2.77rem;
   text-align: center;
-  padding-bottom: 80px;
+  padding-bottom: 4.44rem;
 }
-section.choose-us .container .read-more {
+section#features .container .read-more {
   color: #000;
   background-color: #ffc61a;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
+  margin-top: 4.44rem;
 }
-section.choose-us .container h3 {
+section#features .container h3 {
   color: #ffc61a;
-  font-size: 35px;
+  font-size: 2rem;
   margin-bottom: 0;
 }
-section.choose-us .container h2 {
+section#features .container h2 {
   color: #fff;
-  font-size: 44px;
+  font-size: 2.44rem;
   padding: 0;
-  margin-bottom: 70px;
+  margin-bottom: 3.88rem;
 }
-section.choose-us .container h2, section.choose-us .container h3, section.choose-us .container h4, section.choose-us .container a {
+section#features .container h2, section#features .container h3, section#features .container h4, section#features .container a {
   text-transform: uppercase;
 }
-section.choose-us .container .advantages {
+section#features .container .advantages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,8 +491,8 @@ section.choose-us .container .advantages {
           justify-content: space-between;
   color: #fff;
 }
-section.choose-us .container .advantages__col-one, section.choose-us .container .advantages__col-two {
-  width: 484px;
+section#features .container .advantages__col-one, section#features .container .advantages__col-two {
+  width: 26.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -421,7 +502,7 @@ section.choose-us .container .advantages__col-one, section.choose-us .container 
           flex-direction: column;
   text-align: left;
 }
-section.choose-us .container .advantages__item {
+section#features .container .advantages__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,88 +514,88 @@ section.choose-us .container .advantages__item {
       -ms-flex-align: center;
           align-items: center;
 }
-section.choose-us .container .advantages__item:nth-child(1) {
-  margin-bottom: 84px;
+section#features .container .advantages__item:nth-child(1) {
+  margin-bottom: 4.66rem;
 }
-section.choose-us .container .advantages__item .advantages__icon {
-  min-width: 90px;
-  min-height: 90px;
+section#features .container .advantages__item .advantages__icon {
+  min-width: 5rem;
+  min-height: 5rem;
   background-color: #ffc61a;
   border-radius: 50%;
-  margin-right: 28px;
+  margin-right: 1.55rem;
   position: relative;
 }
-section.choose-us .container .advantages__item .advantages__icon:after {
+section#features .container .advantages__item .advantages__icon:after {
   position: absolute;
-  top: 23px;
-  right: 30px;
-  font-size: 30px;
+  top: 1.27rem;
+  right: 1.66rem;
+  font-size: 1.66rem;
   content: "";
   color: #000;
   display: block;
   font-family: "FontAwesome";
 }
-section.choose-us .container .advantages__item .adv-icon-two:after {
+section#features .container .advantages__item .adv-icon-two:after {
   content: "";
-  right: 27px;
+  right: 1.5rem;
 }
-section.choose-us .container .advantages__item .adv-icon-three:after {
-  right: 31px;
+section#features .container .advantages__item .adv-icon-three:after {
+  right: 1.67rem;
   content: "";
 }
-section.choose-us .container .advantages__item .adv-icon-four:after {
+section#features .container .advantages__item .adv-icon-four:after {
   content: "";
 }
-section.choose-us .container .advantages__descr {
-  font-size: 18px;
+section#features .container .advantages__descr {
+  font-size: 1rem;
 }
-section.choose-us .container .advantages__name {
-  width: 236px;
+section#features .container .advantages__name {
+  width: 13.1rem;
   display: block;
-  font-size: 25px;
+  font-size: 1.38rem;
   text-transform: uppercase;
   color: #ffc61a;
-  margin-bottom: 24px;
+  margin-bottom: 1.33rem;
 }
 
-section.download {
+section#download {
   min-height: 80vh;
   background-color: #fff;
 }
-section.download .container {
-  padding-top: 55px;
+section#download .container {
+  padding-top: 3rem;
   text-align: center;
 }
-section.download .container h3 {
+section#download .container h3 {
   color: #ffc61a;
-  font-size: 35px;
+  font-size: 1.94rem;
   margin-bottom: 0;
   text-transform: uppercase;
 }
-section.download .container h2 {
+section#download .container h2 {
   color: #000;
-  font-size: 44px;
+  font-size: 2.44rem;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 1.38rem;
   text-transform: uppercase;
 }
-section.download .container .row {
-  min-height: 465px;
+section#download .container .row {
+  min-height: 25.8rem;
 }
-section.download .container .row .download-left {
-  padding-left: 100px;
+section#download .container .row .download-left {
+  padding-left: 5.55rem;
   text-align: left;
-  padding-top: 50px;
+  padding-top: 2.77rem;
 }
-section.download .container .row .download-left h5 {
-  font-size: 25px;
+section#download .container .row .download-left h5 {
+  font-size: 1.38rem;
 }
-section.download .container .row .download-left p {
-  margin-top: 25px;
-  font-size: 18px;
+section#download .container .row .download-left p {
+  margin-top: 1.38rem;
+  font-size: 1rem;
 }
-section.download .container .row .download-left .downloads {
-  margin-top: 63px;
+section#download .container .row .download-left .downloads {
+  margin-top: 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,45 +607,45 @@ section.download .container .row .download-left .downloads {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-section.download .container .row .download-left .downloads .google-play, section.download .container .row .download-left .downloads .app-store {
-  width: 210px;
-  height: 65px;
+section#download .container .row .download-left .downloads .google-play, section#download .container .row .download-left .downloads .app-store {
+  width: 11.6rem;
+  height: 3.61rem;
 }
-section.download .container .row .download-left .downloads .google-play {
+section#download .container .row .download-left .downloads .google-play {
   background: url("../img/google-play.png") no-repeat center;
   background-size: cover;
 }
-section.download .container .row .download-left .downloads .app-store {
+section#download .container .row .download-left .downloads .app-store {
   background: url("../img/app-store.png") no-repeat center;
   background-size: cover;
 }
-section.download .container .row .download-right {
+section#download .container .row .download-right {
   background: url("../img/mobile-app.png") no-repeat;
   background-position: 150% -5%;
 }
 
-section.comments {
+section#feedback {
   min-height: 85vh;
   background: url("../img/comments-bg.png") no-repeat center/cover;
 }
-section.comments .container {
-  padding-top: 85px;
+section#feedback .container {
+  padding-top: 4.72rem;
   text-align: center;
 }
-section.comments .container h3 {
+section#feedback .container h3 {
   color: #ffc61a;
-  font-size: 35px;
+  font-size: 2rem;
   margin-bottom: 0;
   text-transform: uppercase;
 }
-section.comments .container h2 {
+section#feedback .container h2 {
   color: #fff;
-  font-size: 44px;
+  font-size: 2.44rem;
   padding: 0;
-  margin-bottom: 55px;
+  margin-bottom: 3.05rem;
   text-transform: uppercase;
 }
-section.comments .container .comments-block {
+section#feedback .container .feedback-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -576,34 +657,34 @@ section.comments .container .comments-block {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-section.comments .container .comments-block .comment-two {
+section#feedback .container .feedback-block .comment-two {
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
 }
-section.comments .container .comments-block .comment-two .comment__author {
+section#feedback .container .feedback-block .comment-two .comment__author {
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
 }
-section.comments .container .comments-block .comment-two .comment__text {
+section#feedback .container .feedback-block .comment-two .comment__text {
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
 }
-section.comments .container .comments-block .comment-one, section.comments .container .comments-block .comment-two {
+section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two {
   text-align: left;
   color: #fff;
-  font-size: 18px;
-  width: 560px;
-  padding-left: 60px;
-  padding-top: 20px;
-  padding-right: 55px;
-  padding-bottom: 50px;
+  font-size: 1rem;
+  width: 31.1rem;
+  padding-left: 3.33rem;
+  padding-top: 1.11rem;
+  padding-right: 3.05rem;
+  padding-bottom: 2.77rem;
   background: url("../img/comment-bg.png") no-repeat center;
   background-size: contain;
 }
-section.comments .container .comments-block .comment-one .comment__text, section.comments .container .comments-block .comment-two .comment__text {
-  font-size: 18px;
+section#feedback .container .feedback-block .comment-one .comment__text, section#feedback .container .feedback-block .comment-two .comment__text {
+  font-size: 1rem;
 }
-section.comments .container .comments-block .comment-one .comment__author, section.comments .container .comments-block .comment-two .comment__author {
+section#feedback .container .feedback-block .comment-one .comment__author, section#feedback .container .feedback-block .comment-two .comment__author {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -611,67 +692,64 @@ section.comments .container .comments-block .comment-one .comment__author, secti
       -ms-flex-align: center;
           align-items: center;
 }
-section.comments .container .comments-block .comment-one .author__avatar, section.comments .container .comments-block .comment-two .author__avatar {
+section#feedback .container .feedback-block .comment-one .author__avatar, section#feedback .container .feedback-block .comment-two .author__avatar {
   background: url("../img/author-avatar.png") no-repeat center;
   background-size: cover;
-  width: 74px;
-  height: 74px;
-  margin-right: 20px;
+  width: 4.11rem;
+  height: 4.11rem;
+  margin-right: 1.11rem;
 }
-section.comments .container .comments-block .comment-one .author__name, section.comments .container .comments-block .comment-two .author__name {
-  font-size: 25px;
+section#feedback .container .feedback-block .comment-one .author__name, section#feedback .container .feedback-block .comment-two .author__name {
+  font-size: 1.38rem;
   text-transform: uppercase;
   color: #ffc61a;
 }
-section.comments .container .comments-block .comment-one .author__status, section.comments .container .comments-block .comment-two .author__status {
-  font-size: 18px;
+section#feedback .container .feedback-block .comment-one .author__status, section#feedback .container .feedback-block .comment-two .author__status {
+  font-size: 1rem;
   text-transform: uppercase;
   color: #fff;
 }
 
-section.your-call {
+section#your-call {
   min-height: 40vh;
   background-color: #ffc61a;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 2.77rem;
+  padding-bottom: 2.77rem;
 }
-section.your-call h3 {
+section#your-call h3 {
   color: #000;
-  font-size: 35px;
+  font-size: 2rem;
   text-transform: uppercase;
 }
-section.your-call .title__number {
+section#your-call .title__number {
   color: #000;
   text-transform: uppercase;
-  font-size: 72px;
+  font-size: 4rem;
   text-decoration: none;
 }
 
-section.about-download-contact {
+section#contacts {
   min-height: 80vh;
   background: url("../img/adc-bg.png") no-repeat center/cover;
 }
-section.about-download-contact .container {
-  padding-top: 90px;
-  padding-bottom: 100px;
+section#contacts .container {
+  padding-top: 5rem;
+  padding-bottom: 5.55rem;
 }
-section.about-download-contact .container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+section#contacts .container .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-section.about-download-contact .container .row .adc__item {
-  width: 339px;
+section#contacts .container .row .adc__item {
+  width: 18.3rem;
 }
-section.about-download-contact .container .row .adc__item .adc__street, section.about-download-contact .container .row .adc__item .adc__phone, section.about-download-contact .container .row .adc__item .adc__mail-one, section.about-download-contact .container .row .adc__item .adc__mail-two {
-  font-size: 18px;
+section#contacts .container .row .adc__item .adc__street, section#contacts .container .row .adc__item .adc__phone, section#contacts .container .row .adc__item .adc__mail-one, section#contacts .container .row .adc__item .adc__mail-two {
+  font-size: 1rem;
   color: #fff;
   margin-left: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 1.11rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,41 +761,41 @@ section.about-download-contact .container .row .adc__item .adc__street, section.
       -ms-flex-align: center;
           align-items: center;
 }
-section.about-download-contact .container .row .adc__item .adc__street i, section.about-download-contact .container .row .adc__item .adc__phone i, section.about-download-contact .container .row .adc__item .adc__mail-one i, section.about-download-contact .container .row .adc__item .adc__mail-two i {
-  margin-right: 27px;
+section#contacts .container .row .adc__item .adc__street i, section#contacts .container .row .adc__item .adc__phone i, section#contacts .container .row .adc__item .adc__mail-one i, section#contacts .container .row .adc__item .adc__mail-two i {
+  margin-right: 1.5rem;
 }
-section.about-download-contact .container .row .adc__item .adc__phone {
-  font-size: 24px;
+section#contacts .container .row .adc__item .adc__phone {
+  font-size: 1.33rem;
 }
-section.about-download-contact .container .row .adc__item .adc__mail-one {
+section#contacts .container .row .adc__item .adc__mail-one {
   margin-left: -1px;
 }
-section.about-download-contact .container .row .adc__item .adc__mail-two {
+section#contacts .container .row .adc__item .adc__mail-two {
   margin-left: -1px;
 }
-section.about-download-contact .container .row .adc__item .adc__title {
-  font-size: 25px;
+section#contacts .container .row .adc__item .adc__title {
+  font-size: 1.38rem;
   color: #fff;
   text-transform: uppercase;
   text-align: left;
-  padding-bottom: 38px;
-  border-bottom: 8px solid #ffc61a;
-  margin-bottom: 46px;
+  padding-bottom: 2.05rem;
+  border-bottom: 0.44rem solid #ffc61a;
+  margin-bottom: 2.55rem;
 }
-section.about-download-contact .container .row .adc__item .adc__text {
-  font-size: 18px;
+section#contacts .container .row .adc__item .adc__text {
+  font-size: 1rem;
   color: #fff;
-  margin-bottom: 37px;
+  margin-bottom: 2rem;
 }
-section.about-download-contact .container .row .adc__item .adc__socials {
+section#contacts .container .row .adc__item .adc__socials {
   color: #ffc61a;
-  font-size: 20px;
+  font-size: 1.11rem;
 }
-section.about-download-contact .container .row .adc__item .adc__socials i {
-  margin-right: 18px;
+section#contacts .container .row .adc__item .adc__socials i {
+  margin-right: 1rem;
 }
-section.about-download-contact .container .row .adc__item .adc__android, section.about-download-contact .container .row .adc__item .adc__apple {
-  font-size: 20px;
+section#contacts .container .row .adc__item .adc__android, section#contacts .container .row .adc__item .adc__apple {
+  font-size: 1.11rem;
   color: #ffc61a;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -730,14 +808,14 @@ section.about-download-contact .container .row .adc__item .adc__android, section
       -ms-flex-align: center;
           align-items: center;
 }
-section.about-download-contact .container .row .adc__item .adc__android .adc__android-text, section.about-download-contact .container .row .adc__item .adc__android .adc__apple-text, section.about-download-contact .container .row .adc__item .adc__apple .adc__android-text, section.about-download-contact .container .row .adc__item .adc__apple .adc__apple-text {
-  width: 170px;
+section#contacts .container .row .adc__item .adc__android .adc__android-text, section#contacts .container .row .adc__item .adc__android .adc__apple-text, section#contacts .container .row .adc__item .adc__apple .adc__android-text, section#contacts .container .row .adc__item .adc__apple .adc__apple-text {
+  width: 9.44rem;
 }
-section.about-download-contact .container .row .adc__item .adc__android .fa-android, section.about-download-contact .container .row .adc__item .adc__android .fa-apple, section.about-download-contact .container .row .adc__item .adc__apple .fa-android, section.about-download-contact .container .row .adc__item .adc__apple .fa-apple {
+section#contacts .container .row .adc__item .adc__android .fa-android, section#contacts .container .row .adc__item .adc__android .fa-apple, section#contacts .container .row .adc__item .adc__apple .fa-android, section#contacts .container .row .adc__item .adc__apple .fa-apple {
   color: #fff;
 }
-section.about-download-contact .container .row .adc__item .adc__android {
-  margin-bottom: 13px;
+section#contacts .container .row .adc__item .adc__android {
+  margin-bottom: 0.72rem;
 }
 
 footer {
@@ -745,11 +823,91 @@ footer {
   opacity: 0.68;
   color: #fff;
   text-align: center;
-  margin-top: -57px;
+  margin-top: -3.16rem;
 }
 footer p {
   margin: 0;
-  font-size: 14px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  font-size: 0.77rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+
+  #main-page .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #main-page .row .logo {
+    margin-top: 0.55rem;
+    margin-bottom: 1.6rem;
+    margin-left: auto;
+  }
+  #main-page .row .logo__text {
+    display: none;
+  }
+  #main-page .row nav {
+    margin-bottom: 1rem;
+  }
+  #main-page .car .car-img {
+    height: 13.88rem;
+    width: 27.77rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  #main-page .car {
+    display: none;
+  }
+  #main-page .container .row .logo {
+    width: 7.2rem;
+    margin-bottom: 4rem;
+  }
+  #main-page .container nav {
+    margin-bottom: 6rem;
+  }
+  #main-page .container nav .nav-link {
+    display: block;
+  }
+  #main-page .container nav .menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  #main-page .title__text {
+    margin-bottom: 0.1rem !important;
+  }
+  #main-page .title__number {
+    font-size: 2.5rem !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+
+  #main-page .title__text {
+    margin-bottom: 0.2rem !important;
+  }
+  #main-page .title__number {
+    font-size: 2.5rem !important;
+  }
+  #main-page .container nav {
+    margin-bottom: 8rem;
+  }
 }

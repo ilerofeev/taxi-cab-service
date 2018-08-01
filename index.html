@@ -18,26 +18,42 @@
 <body>
 
 <!-- Main-page -->
-<section class="main-page">
+<section id="main-page">
   <header>
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="logo">
           <a href="#">
-            <img class="logo__img" src="img/logo.png" alt="logo">
+            <img class="logo__img" src="img/logo.png" alt="Logotype">
           </a>
           <span class="logo__text">call and relax</span>
         </div>
         <nav>
           <ul class="menu">
-            <li><a class="menu__link" href="#">home</a></li>
-            <li><a class="menu__link" href="#">about</a></li>
-            <li><a class="menu__link" href="#">features</a></li>
-            <li><a class="menu__link" href="#">blog</a></li>
-            <li><a class="menu__link" href="#">order now</a></li>
-            <li><a class="menu__link" href="#">contacts</a></li>
+            <li><a class="menu__link" href="#main-page">home</a></li>
+            <li><a class="menu__link" href="#about">about</a></li>
+            <li><a class="menu__link" href="#tariffs">tariffs</a></li>
+            <li><a class="menu__link" href="#features">features</a></li>
+            <li><a class="menu__link" href="#download">download</a></li>
+            <li><a class="menu__link" href="#feedback">feedback</a></li>
+            <li><a class="menu__link" href="#contacts">contacts</a></li>
           </ul>
+          <div class="nav-link fa fa-bars"></div>
         </nav>
+        <div class="navigation__mobile">
+          <div class="navigation__close">
+            &times;
+          </div>
+          <ul>
+            <li><a class="close-nav-btn" href="#main-page">home</a></li>
+            <li><a class="close-nav-btn" href="#about">about</a></li>
+            <li><a class="close-nav-btn" href="#tariffs">tariffs</a></li>
+            <li><a class="close-nav-btn" href="#features">features</a></li>
+            <li><a class="close-nav-btn" href="#download">download</a></li>
+            <li><a class="close-nav-btn" href="#feedback">feedback</a></li>
+            <li><a class="close-nav-btn" href="#contacts">contacts</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -52,10 +68,8 @@
   </div>
 </section> <!-- ./Main-page -->
 
-
-
 <!-- About -->
-<section class="about">
+<section id="about">
   <div class="container">
     <div class="row">
       <div class="about-service col-6">
@@ -84,7 +98,7 @@
 </section> <!-- About -->
 
 <!-- Tariffs -->
-<section class="tariffs">
+<section id="tariffs">
   <div class="container">
     <h3>our</h3>
     <h2>tariffs</h2>
@@ -121,7 +135,7 @@
 </section> <!-- Tariffs -->
 
 <!-- Choose-us -->
-<section class="choose-us">
+<section id="features">
   <div class="container">
       <h3>we do best</h3>
       <h2>than you wish</h2>
@@ -164,7 +178,7 @@
 </section> <!-- Choose-us -->
 
 <!-- Download -->
-<section class="download">
+<section id="download">
   <div class="container">
     <h3>download</h3>
     <h2>best car services</h2>
@@ -182,12 +196,12 @@
   </div>
 </section> <!-- Download -->
 
-<!-- Comments -->
-<section class="comments">
+<!-- Feedback -->
+<section id="feedback">
   <div class="container">
     <h3>Happy Client's</h3>
     <h2>Testimonials</h2>
-    <div class="row comments-block">
+    <div class="row feedback-block">
       <div class="comment-one">
         <p class="comment__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur. Quisque sollicitudin feugiat risus.</p>
         <div class="comment__author">
@@ -210,16 +224,16 @@
       </div>
     </div>
   </div>
-</section> <!-- Comments -->
+</section> <!-- Feedback -->
 
 <!-- Your call -->
-<section class="your-call">
+<section id="your-call">
   <h3>We are Ready to Take Your Call 24 Hours, 7 Days!</h3>
   <a href="tel:+12345678900" class="title__number">+123 4567 8900</a>
 </section> <!-- Your call -->
 
 <!-- About-download-contact -->
-<section class="about-download-contact">
+<section id="contacts">
   <div class="container">
     <div class="row">
       <div class="adc__item">
@@ -277,5 +291,19 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function() {
+    $('.nav-link').click(function() {
+      $('.navigation__mobile').toggleClass('navigation__mobile--active');
+    });
+    $('.navigation__close').click(function() {
+      $('.navigation__mobile').toggleClass('navigation__mobile--active');
+    });
+    $('.close-nav-btn').click(function() {
+      $('.navigation__mobile').toggleClass('navigation__mobile--active');
+    });
+  });
+</script>
 </body>
 </html>
