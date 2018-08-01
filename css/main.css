@@ -7,7 +7,7 @@
   font-family: "BebasNeue-bold", sans-serif;
 }
 
-.la-bl, section.main-page .logo__text, section.main-page .menu, section.main-page .title__text, section.main-page .title__number, section.about .about-service a, section.about .about-service h2, section.about .about-service h3, section.about .book-a-cab__form h3, section.tariffs .container h3, section.tariffs .container h2, section.tariffs .container .row .tariff__name, section.choose-us .container h3, section.choose-us .container h2, section.choose-us .container .advantages__name, section.download .container h3, section.download .container h2, section.download .container .row .download-left h5, section.comments .container h3, section.comments .container h2, section.comments .container .comments-block .comment-one .author__name, section.comments .container .comments-block .comment-two .author__name, section.comments .container .comments-block .comment-one .author__status, section.comments .container .comments-block .comment-two .author__status, section.your-call h3, section.your-call .title__number, section.about-download-contact .container .row .adc__item .adc__title {
+.la-bl, section.main-page .row .logo__text, section.main-page .row .menu, section.main-page .title, section.about .about-service a, section.about .about-service h2, section.about .about-service h3, section.about .book-a-cab__form h3, section.tariffs .container h3, section.tariffs .container h2, section.tariffs .container .row .tariff__name, section.choose-us .container h3, section.choose-us .container h2, section.choose-us .container .advantages__name, section.download .container h3, section.download .container h2, section.download .container .row .download-left h5, section.comments .container h3, section.comments .container h2, section.comments .container .comments-block .comment-one .author__name, section.comments .container .comments-block .comment-two .author__name, section.comments .container .comments-block .comment-one .author__status, section.comments .container .comments-block .comment-two .author__status, section.your-call h3, section.your-call .title__number, section.about-download-contact .container .row .adc__item .adc__title {
   font-family: "Lato-Black", sans-serif;
 }
 
@@ -55,100 +55,19 @@
   font-weight: normal;
   font-style: normal;
 }
-section.main-page {
-  background: url("../img/main-bg.png") no-repeat center;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-  height: 85vh;
-}
-section.main-page .row {
-  max-width: 1200px;
-  padding-top: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-section.main-page .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 157px;
-  cursor: pointer;
-  text-align: center;
-}
-section.main-page .logo__pic {
-  height: 30px;
-  width: 157px;
-}
-section.main-page .logo__text {
-  text-transform: uppercase;
-  font-style: 15px;
-  letter-spacing: 1.75px;
-  margin-top: 7px;
-}
-section.main-page .menu {
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 17px;
+body {
   padding: 0;
-}
-section.main-page .menu__link {
-  display: inline-block;
-  text-decoration: none;
-  margin-left: 25px;
-  cursor: pointer;
-  color: #fff;
-}
-section.main-page .menu__link:hover {
-  color: #000;
-  background-color: #ffc61a;
-  border: 1px solid #ffc61a;
-  border-radius: 20px;
-  border-color: #ffc61a;
-  padding: 2px 15px;
-}
-section.main-page .title {
-  margin-top: 2%;
-}
-section.main-page .title__text {
-  color: #ffc61a;
-  text-transform: uppercase;
-  font-size: 36px;
-}
-section.main-page .title__number {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 72px;
-  text-decoration: none;
+  margin: 0;
+  font-size: 18px;
 }
 
-section.yellow {
-  position: relative;
-  height: 15vh;
-  width: 100%;
-  background-color: #ffc61a;
+.container {
+  max-width: 1200px;
 }
-section.yellow .car {
-  background: url("../img/main-car.png") no-repeat center;
-  background-size: cover;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 600px;
-  height: 350px;
+
+.container-fluid {
+  padding-left: 4.44rem;
+  padding-right: 4.72rem;
 }
 
 .read-more {
@@ -156,13 +75,103 @@ section.yellow .car {
   margin-top: 40px;
   border-radius: 8px;
   color: #fff;
-  font-size: 30px;
+  font-size: 1.66 rem;
   font-family: "BebasNeue-bold", sans-serif !important;
   width: 166px;
   height: 50px;
   background-color: #000;
   text-align: center;
   text-decoration: none !important;
+}
+
+section.main-page {
+  background: url("../img/main-bg.png") no-repeat center top/cover;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 0;
+}
+section.main-page .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.main-page .row .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  text-align: center;
+}
+section.main-page .row .logo__img {
+  height: 30px;
+  width: 157px;
+}
+section.main-page .row .logo__text {
+  font-size: 1rem;
+  padding-left: 1px;
+  letter-spacing: 1.75px;
+  margin-top: 7px;
+}
+section.main-page .row .menu {
+  font-size: 1rem;
+}
+section.main-page .row .menu li {
+  display: inline-block;
+}
+section.main-page .row .menu__link {
+  text-decoration: none;
+  margin-left: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+section.main-page .row .menu__link:hover {
+  color: #000;
+  background-color: #ffc61a;
+  border: 1px solid #ffc61a;
+  border-radius: 20px;
+  padding: 2px 15px;
+}
+section.main-page .title {
+  text-align: center;
+  margin-top: 2.5%;
+  margin-bottom: auto;
+}
+section.main-page .title__text {
+  color: #ffc61a;
+  font-size: 2rem;
+}
+section.main-page .title__number {
+  margin-top: -15px;
+  color: #fff;
+  font-size: 4rem;
+  text-decoration: none;
+}
+section.main-page .car {
+  position: absolute;
+  bottom: 0;
+  height: 15vh;
+  width: 100%;
+  background-color: #ffc61a;
+}
+section.main-page .car .car-img {
+  background: url("../img/main-car.png") no-repeat center/cover;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 600px;
+  height: 350px;
 }
 
 section.about {
@@ -536,8 +545,7 @@ section.download .container .row .download-right {
 
 section.comments {
   min-height: 85vh;
-  background: url("../img/comments-bg.png") no-repeat center;
-  background-size: cover;
+  background: url("../img/comments-bg.png") no-repeat center/cover;
 }
 section.comments .container {
   padding-top: 85px;
@@ -642,8 +650,7 @@ section.your-call .title__number {
 
 section.about-download-contact {
   min-height: 80vh;
-  background: url("../img/adc-bg.png") no-repeat center;
-  background-size: cover;
+  background: url("../img/adc-bg.png") no-repeat center/cover;
 }
 section.about-download-contact .container {
   padding-top: 90px;
