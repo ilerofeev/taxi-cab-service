@@ -15,8 +15,42 @@
   font-family: "Lato-Medium", sans-serif;
 }
 
-.la-re, section#about .about-service p, section#features .container .advantages__descr, section#download .container .row .download-left p, section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two, section#contacts .container .row .adc__item .adc__text, section#contacts .container .row .adc__item .adc__android, section#contacts .container .row .adc__item .adc__apple, footer {
+.la-re, section#about .about-service p, section#about .book-a-cab__form input::-webkit-input-placeholder, section#features .container .advantages__descr, section#download .container .row .download-left p, section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two, section#contacts .container .row .adc__item .adc__text, section#contacts .container .row .adc__item .adc__android, section#contacts .container .row .adc__item .adc__apple, footer {
   font-family: "Lato-Regular", sans-serif;
+}
+
+.la-re, section#about .about-service p, section#about .book-a-cab__form input:-ms-input-placeholder, section#features .container .advantages__descr, section#download .container .row .download-left p, section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two, section#contacts .container .row .adc__item .adc__text, section#contacts .container .row .adc__item .adc__android, section#contacts .container .row .adc__item .adc__apple, footer {
+  font-family: "Lato-Regular", sans-serif;
+}
+
+.la-re, section#about .about-service p, section#about .book-a-cab__form input::-ms-input-placeholder, section#features .container .advantages__descr, section#download .container .row .download-left p, section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two, section#contacts .container .row .adc__item .adc__text, section#contacts .container .row .adc__item .adc__android, section#contacts .container .row .adc__item .adc__apple, footer {
+  font-family: "Lato-Regular", sans-serif;
+}
+
+.la-re, section#about .about-service p, section#about .book-a-cab__form input::placeholder, section#features .container .advantages__descr, section#download .container .row .download-left p, section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two, section#contacts .container .row .adc__item .adc__text, section#contacts .container .row .adc__item .adc__android, section#contacts .container .row .adc__item .adc__apple, footer {
+  font-family: "Lato-Regular", sans-serif;
+}
+
+html {
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.read-more {
+  display: block !important;
+  border-radius: 0.44rem;
+  color: #fff;
+  font-size: 1.66rem;
+  font-family: "BebasNeue-bold", sans-serif !important;
+  width: 9.22rem;
+  height: 2.77rem;
+  background-color: #000;
+  text-align: center;
+  text-decoration: none !important;
+  padding-top: 2px;
 }
 
 @font-face {
@@ -55,28 +89,6 @@
   font-weight: normal;
   font-style: normal;
 }
-html {
-  font-size: 18px;
-}
-
-.container {
-  max-width: 1200px;
-}
-
-.read-more {
-  display: block !important;
-  margin-top: 5rem;
-  border-radius: 0.44rem;
-  color: #fff;
-  font-size: 1.66 rem;
-  font-family: "BebasNeue-bold", sans-serif !important;
-  width: 9.22rem;
-  height: 2.77rem;
-  background-color: #000;
-  text-align: center;
-  text-decoration: none !important;
-}
-
 section#main-page {
   background: url("../img/main-bg.png") no-repeat center top/cover;
   height: 100vh;
@@ -262,11 +274,15 @@ section#main-page .car .car-img {
   height: 17.7rem;
 }
 
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 section#about {
   background-color: #ffc61a;
-  padding-bottom: 4.44rem;
   padding-top: 2.22rem;
-  margin-bottom: 0.2rem;
+  padding-bottom: 2.5rem;
 }
 section#about .about-service {
   display: -webkit-box;
@@ -279,6 +295,7 @@ section#about .about-service {
 }
 section#about .about-service .read-more {
   margin-right: auto;
+  margin-top: auto;
   color: #fff;
 }
 section#about .about-service a, section#about .about-service h2, section#about .about-service h3 {
@@ -286,15 +303,16 @@ section#about .about-service a, section#about .about-service h2, section#about .
   color: #101010;
 }
 section#about .about-service h3 {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 section#about .about-service h2 {
-  font-size: 2.77rem;
+  font-size: 2.5rem;
   color: #000;
   margin-bottom: 1.66rem;
 }
 section#about .about-service p {
-  font-size: 1rem;
+  font-size: 16px;
+  padding-bottom: 1rem;
 }
 section#about .book-a-cab {
   display: -webkit-box;
@@ -306,19 +324,17 @@ section#about .book-a-cab {
           flex-direction: column;
 }
 section#about .book-a-cab__form {
-  padding: 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  width: 23.4rem;
+  width: 22rem;
   background-color: #fff;
 }
 section#about .book-a-cab__form h3 {
   padding: 1.11rem 0;
-  padding-left: 2rem;
+  padding-left: 1.6rem;
   background-color: #171717;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1.88rem;
 }
 section#about .book-a-cab__form h3 span {
   color: #ffc61a;
@@ -332,6 +348,34 @@ section#about .book-a-cab__form input {
   border-bottom: 3px solid #e4e4e4;
   margin-right: 1.27rem;
   margin-bottom: 2.05rem;
+}
+section#about .book-a-cab__form input::-webkit-input-placeholder {
+  color: #000;
+  font-size: 1.11rem;
+}
+section#about .book-a-cab__form input:-ms-input-placeholder {
+  color: #000;
+  font-size: 1.11rem;
+}
+section#about .book-a-cab__form input::-ms-input-placeholder {
+  color: #000;
+  font-size: 1.11rem;
+}
+section#about .book-a-cab__form input::placeholder {
+  color: #000;
+  font-size: 1.11rem;
+}
+section#about .book-a-cab__form input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+section#about .book-a-cab__form input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+section#about .book-a-cab__form input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+section#about .book-a-cab__form input:focus::placeholder {
+  opacity: 0;
 }
 section#about .book-a-cab__form input[class="Choose"] {
   width: 93.2%;
@@ -843,7 +887,7 @@ footer p {
 
 @media screen and (max-width: 992px) {
   html {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   #main-page .row {
@@ -872,11 +916,14 @@ footer p {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 15px;
+    font-size: 15px !important;
   }
 
   #main-page .car {
     display: none;
+  }
+  #main-page .title {
+    margin-top: 7rem !important;
   }
   #main-page .title__text {
     margin-bottom: -0.1rem !important;
@@ -885,23 +932,40 @@ footer p {
     width: 7.2rem;
     margin-bottom: 4rem;
   }
-  #main-page .container nav {
-    margin-bottom: 6rem;
-  }
   #main-page .container nav .nav-link {
     display: block;
   }
   #main-page .container nav .menu {
     display: none;
   }
+
+  #about {
+    text-align: center;
+  }
+  #about .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about .read-more {
+    margin: 0 auto;
+  }
+  #about .book-a-cab {
+    margin-top: 4rem;
+  }
+  #about .book-a-cab__form {
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 14px;
+    font-size: 13px !important;
   }
 
   #main-page .title__text {
-    margin-top: 4.5rem !important;
+    font-size: 1.4rem !important;
+    margin-top: 8.5rem !important;
     margin-bottom: 0.1rem !important;
   }
   #main-page .title__number {
@@ -910,17 +974,25 @@ footer p {
 }
 @media screen and (max-width: 320px) {
   html {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 
   #main-page .title__text {
-    margin-top: 5.5rem !important;
+    font-size: 1.3rem !important;
+    margin-top: 12.5rem !important;
     margin-bottom: 0.2rem !important;
   }
   #main-page .title__number {
-    font-size: 2.5rem !important;
+    font-size: 2.4rem !important;
   }
-  #main-page .container nav {
-    margin-bottom: 8rem;
+
+  #about {
+    text-align: center;
+  }
+  #about .read-more {
+    margin: 0 auto;
+  }
+  #about .about-service p {
+    font-size: 14px !important;
   }
 }
