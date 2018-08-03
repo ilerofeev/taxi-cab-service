@@ -568,7 +568,7 @@ section#features .container .advantages {
   color: #fff;
 }
 section#features .container .advantages__col-one, section#features .container .advantages__col-two {
-  width: 25.5rem;
+  width: 42%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
