@@ -289,7 +289,7 @@ section#main-page .car .car-img {
 section#about {
   background-color: #ffc61a;
   padding-top: 2.22rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 2.6rem;
 }
 section#about .about-service {
   display: -webkit-box;
@@ -491,7 +491,7 @@ section#tariffs .container .row .tariff:before {
 }
 section#tariffs .container .row .tariff:after {
   position: absolute;
-  right: 0.45rem;
+  right: 0.4rem;
   bottom: 0rem;
   z-index: 1;
   font-size: 1.5rem;
@@ -1077,12 +1077,9 @@ footer p {
   }
   #tariffs .tariff__description {
     font-size: 14px !important;
-    padding: 0.6rem !important;
+    padding: 0.9rem 1.5rem !important;
   }
   #tariffs .tariff__price {
     margin-top: -0.5rem !important;
-  }
-  #tariffs .tariff:hover::after, #tariffs .tariff:hover::before {
-    display: none !important;
   }
 }
