@@ -632,11 +632,10 @@ section#features .container .advantages__name {
 }
 
 section#download {
-  min-height: 80vh;
   background-color: #fff;
+  padding-top: 2.61rem;
 }
 section#download .container {
-  padding-top: 3rem;
   text-align: center;
 }
 section#download .container h3 {
@@ -652,13 +651,11 @@ section#download .container h2 {
   margin-bottom: 1.38rem;
   text-transform: uppercase;
 }
-section#download .container .row {
-  min-height: 25.8rem;
-}
 section#download .container .row .download-left {
   padding-left: 5.55rem;
   text-align: left;
   padding-top: 2.77rem;
+  margin-bottom: 2.2rem;
 }
 section#download .container .row .download-left h5 {
   font-size: 1.38rem;
@@ -681,20 +678,23 @@ section#download .container .row .download-left .downloads {
           justify-content: space-between;
 }
 section#download .container .row .download-left .downloads .google-play, section#download .container .row .download-left .downloads .app-store {
-  width: 11.6rem;
+  width: 45%;
   height: 3.61rem;
 }
 section#download .container .row .download-left .downloads .google-play {
   background: url("../img/google-play.png") no-repeat center;
-  background-size: cover;
+  background-size: contain;
 }
 section#download .container .row .download-left .downloads .app-store {
   background: url("../img/app-store.png") no-repeat center;
-  background-size: cover;
+  background-size: contain;
 }
 section#download .container .row .download-right {
-  background: url("../img/mobile-app.png") no-repeat;
-  background-position: 150% -5%;
+  margin-left: auto;
+  width: 23.7rem;
+  height: 25rem;
+  background: url("../img/mobile-app.png") no-repeat 0% -36%/cover;
+  margin-bottom: 0;
 }
 
 section#feedback {
@@ -976,6 +976,20 @@ footer p {
   #features .advantages__col-one {
     margin-bottom: 4.66rem !important;
   }
+
+  #download .download-left {
+    padding-top: 1.5rem !important;
+  }
+  #download .download-right {
+    width: 18.96rem !important;
+    height: 20rem !important;
+  }
+  #download .downloads {
+    margin-top: 2rem !important;
+  }
+  #download .google-play, #download .app-store {
+    width: 48% !important;
+  }
 }
 @media screen and (max-width: 768px) {
   html {
@@ -1044,6 +1058,35 @@ footer p {
   #features .advantages__col-one, #features .advantages__col-two {
     width: 25rem !important;
   }
+
+  #download {
+    padding-bottom: 2.61rem !important;
+  }
+  #download h2 {
+    font-size: 1.8rem !important;
+  }
+  #download h3 {
+    font-size: 1.6rem !important;
+  }
+  #download .row {
+    position: relative !important;
+  }
+  #download .downloads {
+    margin-top: 2.2rem !important;
+  }
+  #download .download-left {
+    text-align: center !important;
+    width: 30% !important;
+    margin: 0 auto !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  #download .download-right {
+    display: none !important;
+  }
+  #download .google-play, #download .app-store {
+    width: 48% !important;
+  }
 }
 @media screen and (max-width: 480px) {
   html {
@@ -1066,7 +1109,7 @@ footer p {
     font-size: 2rem !important;
   }
   #about .book-a-cab__form {
-    width: 18rem !important;
+    width: 19rem !important;
   }
   #about .book-a-cab__form h3 {
     padding-left: 0 !important;
@@ -1103,6 +1146,28 @@ footer p {
   }
   #features .container {
     padding: 1rem !important;
+  }
+
+  #download .downloads {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  #download .google-play {
+    margin-bottom: 1.5rem !important;
+  }
+  #download .google-play, #download .app-store {
+    width: 11rem !important;
+  }
+  #download h2 {
+    font-size: 1.65rem !important;
+  }
+  #download h3 {
+    font-size: 1.55rem !important;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1160,5 +1225,12 @@ footer p {
   }
   #features h3 {
     font-size: 1.6rem !important;
+  }
+
+  #download h2 {
+    font-size: 1.6rem !important;
+  }
+  #download h3 {
+    font-size: 1.5rem !important;
   }
 }
