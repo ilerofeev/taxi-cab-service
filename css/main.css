@@ -448,6 +448,8 @@ section#tariffs .container .row .tariff {
   padding-bottom: 0.4rem;
   width: 90%;
   position: relative;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 section#tariffs .container .row .tariff-overlay {
   padding: 0;
@@ -1077,7 +1079,7 @@ footer p {
   }
   #tariffs .tariff__description {
     font-size: 14px !important;
-    padding: 0.9rem 1.5rem !important;
+    padding: 0.9rem 0rem !important;
   }
   #tariffs .tariff__price {
     margin-top: -0.5rem !important;
