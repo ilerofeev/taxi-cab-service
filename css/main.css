@@ -438,7 +438,6 @@ section#tariffs .container h2, section#tariffs .container h3, section#tariffs .c
   text-transform: uppercase;
 }
 section#tariffs .container .row .tariff {
-  overflow: hidden;
   background-color: #f5f4f2;
   padding: 6.88rem 2rem 1.38rem 2rem;
   width: 95%;
@@ -987,6 +986,9 @@ footer p {
   #about .book-a-cab__form {
     margin: 0 auto;
   }
+  #about .book-a-cab__form h3 {
+    padding-left: 0 !important;
+  }
 }
 @media screen and (max-width: 480px) {
   html {
@@ -1009,7 +1011,10 @@ footer p {
     font-size: 2rem !important;
   }
   #about .book-a-cab__form {
-    width: 90% !important;
+    width: 18rem !important;
+  }
+  #about .book-a-cab__form h3 {
+    padding-left: 0 !important;
   }
   #about .book-a-cab__form input {
     width: 93% !important;
