@@ -40,7 +40,15 @@ html {
 }
 
 .read-more {
-  display: block !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 0.44rem;
   color: #fff;
   font-size: 1.66rem;
@@ -50,7 +58,6 @@ html {
   background-color: #000;
   text-align: center;
   text-decoration: none !important;
-  padding-top: 2px;
 }
 
 @font-face {
@@ -244,16 +251,16 @@ section#main-page .row .nav-link:hover {
 }
 section#main-page .title {
   text-align: center;
-  margin-top: 2.8rem;
+  margin-top: 4rem;
 }
 section#main-page .title__text {
   color: #ffc61a;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: -10px;
 }
 section#main-page .title__number {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.9rem;
   text-decoration: none;
 }
 section#main-page .car {
@@ -313,6 +320,7 @@ section#about .about-service h2 {
 section#about .about-service p {
   font-size: 16px;
   padding-bottom: 1rem;
+  padding-right: 0.5rem;
 }
 section#about .book-a-cab {
   display: -webkit-box;
@@ -384,10 +392,19 @@ section#about .book-a-cab__form input[type="Submit"] {
   border-width: 0;
 }
 section#about .book-a-cab__form .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #131313;
   color: #fff;
   width: 93.2%;
-  padding: 0.22rem 8.33rem;
   border-radius: 0.44rem;
   text-transform: uppercase;
   font-size: 1.66rem;
@@ -887,7 +904,7 @@ footer p {
 
 @media screen and (max-width: 992px) {
   html {
-    font-size: 16px !important;
+    font-size: 17px !important;
   }
 
   #main-page .row {
@@ -910,13 +927,20 @@ footer p {
   #main-page .row nav {
     margin-bottom: 1rem;
   }
+  #main-page .row nav .menu {
+    font-size: 0.94rem;
+  }
   #main-page .car {
     height: 11vh !important;
+  }
+
+  #about .about-service h2 {
+    font-size: 2.3rem !important;
   }
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 15px !important;
+    font-size: 16px !important;
   }
 
   #main-page .car {
@@ -951,6 +975,12 @@ footer p {
   #about .read-more {
     margin: 0 auto;
   }
+  #about .read-more__form {
+    margin: 0 auto;
+  }
+  #about .about-service h2 {
+    font-size: 2.1rem !important;
+  }
   #about .book-a-cab {
     margin-top: 4rem;
   }
@@ -960,30 +990,52 @@ footer p {
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 13px !important;
+    font-size: 15px !important;
   }
 
   #main-page .title__text {
-    font-size: 1.4rem !important;
+    font-size: 1.5rem !important;
     margin-top: 8.5rem !important;
     margin-bottom: 0.1rem !important;
   }
   #main-page .title__number {
     font-size: 2.5rem !important;
   }
+
+  #about .about-service h3 {
+    font-size: 1.8rem !important;
+  }
+  #about .about-service h2 {
+    font-size: 2rem !important;
+  }
+  #about .book-a-cab__form {
+    width: 90% !important;
+  }
+  #about .book-a-cab__form input {
+    width: 93% !important;
+  }
+  #about .book-a-cab__form .submit {
+    padding: 0 !important;
+    width: 93% !important;
+  }
+  #about .book-a-cab__inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 @media screen and (max-width: 320px) {
   html {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
 
   #main-page .title__text {
-    font-size: 1.3rem !important;
-    margin-top: 12.5rem !important;
+    margin-top: 10rem !important;
     margin-bottom: 0.2rem !important;
-  }
-  #main-page .title__number {
-    font-size: 2.4rem !important;
   }
 
   #about {
@@ -992,7 +1044,10 @@ footer p {
   #about .read-more {
     margin: 0 auto;
   }
-  #about .about-service p {
-    font-size: 14px !important;
+  #about .about-service h3 {
+    font-size: 1.6rem !important;
+  }
+  #about .about-service h2 {
+    font-size: 1.8rem !important;
   }
 }
