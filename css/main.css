@@ -51,10 +51,10 @@ html {
           align-items: center;
   border-radius: 0.44rem;
   color: #fff;
-  font-size: 1.66rem;
+  font-size: 1.56rem;
   font-family: "BebasNeue-bold", sans-serif !important;
-  width: 9.22rem;
-  height: 2.77rem;
+  width: 8.52rem;
+  height: 2.47rem;
   background-color: #000;
   text-align: center;
   text-decoration: none !important;
@@ -416,7 +416,7 @@ section#about .book-a-cab__inputs {
 }
 
 section#tariffs {
-  padding-top: 3.61rem;
+  padding-top: 2.61rem;
   padding-bottom: 3.61rem;
 }
 section#tariffs .container {
@@ -432,42 +432,40 @@ section#tariffs .container h2 {
   font-size: 2.44rem;
   padding: 0;
   margin-top: -0.55rem;
-  margin-bottom: 6.94rem;
+  margin-bottom: 7.94rem;
 }
 section#tariffs .container h2, section#tariffs .container h3, section#tariffs .container h4, section#tariffs .container a {
   text-transform: uppercase;
 }
+section#tariffs .container .row {
+  margin-top: -1rem;
+}
 section#tariffs .container .row .tariff {
+  margin: 0 auto;
+  margin-bottom: 8rem;
   background-color: #f5f4f2;
-  padding: 6.88rem 2rem 1.38rem 2rem;
-  width: 95%;
+  padding-top: 1.88rem;
+  padding-bottom: 0.4rem;
+  width: 90%;
   position: relative;
-  overflow-bottom: hidden;
 }
 section#tariffs .container .row .tariff-overlay {
   padding: 0;
 }
-section#tariffs .container .row .tariff-overlay:nth-child(1) .tariff {
-  margin-right: auto;
-}
-section#tariffs .container .row .tariff-overlay:nth-child(2) .tariff {
-  margin-left: auto;
-  margin-right: auto;
-}
 section#tariffs .container .row .tariff-overlay:nth-child(3) .tariff {
-  margin-left: auto;
+  margin-bottom: 1rem;
 }
 section#tariffs .container .row .tariff__name {
   font-size: 1.66rem;
   color: #000;
+  margin-top: 6rem;
 }
 section#tariffs .container .row .tariff__description {
   font-size: 1rem;
   color: #101010;
 }
 section#tariffs .container .row .tariff .read-more {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1.5rem auto;
   color: #000;
   background-color: #ffc61a;
 }
@@ -476,7 +474,7 @@ section#tariffs .container .row .tariff__img {
   width: 100%;
   height: 10rem;
   background: url("../img/tariffs-car.png") no-repeat center;
-  background-size: cover;
+  background-size: contain;
   top: -20%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -487,20 +485,23 @@ section#tariffs .container .row .tariff:before {
   bottom: 0;
   right: 0;
   content: "";
-  border-bottom: 4.44rem solid #1b1b1b;
-  border-left: 4.44rem solid transparent;
+  border-bottom: 4.2rem solid #1b1b1b;
+  border-left: 4.2rem solid transparent;
   display: none;
 }
 section#tariffs .container .row .tariff:after {
   position: absolute;
-  bottom: 2px;
-  right: 8px;
+  right: 0.45rem;
+  bottom: 0rem;
   z-index: 1;
-  font-size: 1.66rem;
+  font-size: 1.5rem;
   content: "";
   color: #ffc61a;
   font-family: "FontAwesome";
   display: none;
+}
+section#tariffs .container .row .tariff .tariff__price {
+  font-size: 2rem;
 }
 section#tariffs .container .row .tariff:hover {
   background-color: #ffc61a;
@@ -1017,11 +1018,11 @@ footer p {
     padding-left: 0 !important;
   }
   #about .book-a-cab__form input {
-    width: 93% !important;
+    width: 91% !important;
   }
   #about .book-a-cab__form .submit {
     padding: 0 !important;
-    width: 93% !important;
+    width: 91% !important;
   }
   #about .book-a-cab__inputs {
     display: -webkit-box;
@@ -1047,12 +1048,41 @@ footer p {
     text-align: center;
   }
   #about .read-more {
-    margin: 0 auto;
+    padding-bottom: 0.2rem !important;
   }
   #about .about-service h3 {
     font-size: 1.6rem !important;
   }
   #about .about-service h2 {
     font-size: 1.8rem !important;
+  }
+  #about .book-a-cab__form .submit {
+    padding-bottom: 0.2rem !important;
+  }
+
+  #tariffs .row {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  #tariffs .tariff__name {
+    margin-top: 4rem !important;
+  }
+  #tariffs .tariff__description {
+    font-size: 14px !important;
+    padding: 0.6rem !important;
+  }
+  #tariffs .tariff__price {
+    margin-top: -0.5rem !important;
+  }
+  #tariffs .tariff:hover::after, #tariffs .tariff:hover::before {
+    display: none !important;
   }
 }
