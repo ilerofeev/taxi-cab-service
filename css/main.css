@@ -281,15 +281,14 @@ section#main-page .car .car-img {
   height: 17.7rem;
 }
 
-.container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 section#about {
   background-color: #ffc61a;
   padding-top: 2.22rem;
   padding-bottom: 2.6rem;
+}
+section#about .container {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 section#about .about-service {
   display: -webkit-box;
@@ -424,7 +423,7 @@ section#tariffs .container {
 }
 section#tariffs .container h3 {
   color: #ffc61a;
-  font-size: 2 rem;
+  font-size: 2rem;
   margin-bottom: 0;
 }
 section#tariffs .container h2 {
@@ -519,11 +518,20 @@ section#features {
   min-height: 100vh;
   background: url("../img/choose-bg.png") no-repeat center;
   background-size: cover;
+  padding-top: 2.61rem;
+  padding-bottom: 2.61rem;
 }
 section#features .container {
-  padding-top: 2.77rem;
+  padding: 2rem;
   text-align: center;
-  padding-bottom: 4.44rem;
+}
+section#features .container .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 section#features .container .read-more {
   color: #000;
@@ -560,7 +568,7 @@ section#features .container .advantages {
   color: #fff;
 }
 section#features .container .advantages__col-one, section#features .container .advantages__col-two {
-  width: 26.8rem;
+  width: 25.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,7 +604,7 @@ section#features .container .advantages__item .advantages__icon {
 section#features .container .advantages__item .advantages__icon:after {
   position: absolute;
   top: 1.27rem;
-  right: 1.66rem;
+  right: 1.7rem;
   font-size: 1.66rem;
   content: "";
   color: #000;
@@ -605,10 +613,9 @@ section#features .container .advantages__item .advantages__icon:after {
 }
 section#features .container .advantages__item .adv-icon-two:after {
   content: "";
-  right: 1.5rem;
+  right: 1.6rem;
 }
 section#features .container .advantages__item .adv-icon-three:after {
-  right: 1.67rem;
   content: "";
 }
 section#features .container .advantages__item .adv-icon-four:after {
@@ -618,8 +625,6 @@ section#features .container .advantages__descr {
   font-size: 1rem;
 }
 section#features .container .advantages__name {
-  width: 13.1rem;
-  display: block;
   font-size: 1.38rem;
   text-transform: uppercase;
   color: #ffc61a;
@@ -958,6 +963,19 @@ footer p {
   #tariffs .tariff__description {
     padding: 0.5rem 0rem !important;
   }
+
+  #features .advantages {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  #features .advantages__col-one, #features .advantages__col-two {
+    width: 60% !important;
+  }
+  #features .advantages__col-one {
+    margin-bottom: 4.66rem !important;
+  }
 }
 @media screen and (max-width: 768px) {
   html {
@@ -1022,6 +1040,10 @@ footer p {
   #tariffs .tariff__description {
     padding: 0.5rem 0rem !important;
   }
+
+  #features .advantages__col-one, #features .advantages__col-two {
+    width: 25rem !important;
+  }
 }
 @media screen and (max-width: 480px) {
   html {
@@ -1067,14 +1089,20 @@ footer p {
   }
 
   #tariffs .tariff {
-    width: 80% !important;
-    max-width: 20rem !important;
+    width: 90% !important;
   }
   #tariffs .tariff__name {
     margin-top: 4.2rem !important;
   }
   #tariffs .tariff__description {
     padding: 0.5rem 0rem !important;
+  }
+
+  #features .advantages__col-one, #features .advantages__col-two {
+    width: 85% !important;
+  }
+  #features .container {
+    padding: 1rem !important;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1115,5 +1143,22 @@ footer p {
   }
   #tariffs .tariff__price {
     margin-top: -0.5rem !important;
+  }
+
+  #features .advantages__icon {
+    display: none !important;
+  }
+  #features .advantages__descr {
+    font-size: 14px !important;
+    text-align: center;
+  }
+  #features .advantages__name {
+    text-align: center !important;
+  }
+  #features h2 {
+    font-size: 1.8rem !important;
+  }
+  #features h3 {
+    font-size: 1.6rem !important;
   }
 }
