@@ -442,7 +442,6 @@ section#tariffs .container .row {
 }
 section#tariffs .container .row .tariff {
   margin: 0 auto;
-  margin-bottom: 8rem;
   background-color: #f5f4f2;
   padding-top: 1.88rem;
   padding-bottom: 0.4rem;
@@ -454,13 +453,10 @@ section#tariffs .container .row .tariff {
 section#tariffs .container .row .tariff-overlay {
   padding: 0;
 }
-section#tariffs .container .row .tariff-overlay:nth-child(3) .tariff {
-  margin-bottom: 1rem;
-}
 section#tariffs .container .row .tariff__name {
   font-size: 1.66rem;
   color: #000;
-  margin-top: 6rem;
+  margin-top: 4.4rem;
 }
 section#tariffs .container .row .tariff__description {
   font-size: 1rem;
@@ -939,6 +935,29 @@ footer p {
   #about .about-service h2 {
     font-size: 2.3rem !important;
   }
+
+  #tariffs .row {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  #tariffs .tariff {
+    width: 80% !important;
+    max-width: 20rem !important;
+    margin-bottom: 8rem !important;
+  }
+  #tariffs .tariff-overlay:nth-child(3) .tariff {
+    margin-bottom: 1rem !important;
+  }
+  #tariffs .tariff__name {
+    margin-top: 4.2rem !important;
+  }
+  #tariffs .tariff__description {
+    padding: 0.5rem 0rem !important;
+  }
 }
 @media screen and (max-width: 768px) {
   html {
@@ -992,6 +1011,17 @@ footer p {
   #about .book-a-cab__form h3 {
     padding-left: 0 !important;
   }
+
+  #tariffs .tariff {
+    width: 80% !important;
+    max-width: 20rem !important;
+  }
+  #tariffs .tariff__name {
+    margin-top: 4.2rem !important;
+  }
+  #tariffs .tariff__description {
+    padding: 0.5rem 0rem !important;
+  }
 }
 @media screen and (max-width: 480px) {
   html {
@@ -1035,6 +1065,17 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
+  #tariffs .tariff {
+    width: 80% !important;
+    max-width: 20rem !important;
+  }
+  #tariffs .tariff__name {
+    margin-top: 4.2rem !important;
+  }
+  #tariffs .tariff__description {
+    padding: 0.5rem 0rem !important;
+  }
 }
 @media screen and (max-width: 320px) {
   html {
@@ -1062,24 +1103,15 @@ footer p {
     padding-bottom: 0.2rem !important;
   }
 
-  #tariffs .row {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+  #tariffs .tariff {
+    width: 90% !important;
   }
   #tariffs .tariff__name {
     margin-top: 4rem !important;
   }
   #tariffs .tariff__description {
     font-size: 14px !important;
-    padding: 1.4rem 0rem !important;
+    padding: 1.2rem 0rem !important;
   }
   #tariffs .tariff__price {
     margin-top: -0.5rem !important;
