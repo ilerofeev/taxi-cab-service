@@ -617,6 +617,7 @@ section#features .container .advantages__item .adv-icon-two:after {
 }
 section#features .container .advantages__item .adv-icon-three:after {
   content: "";
+  right: 1.8rem;
 }
 section#features .container .advantages__item .adv-icon-four:after {
   content: "";
@@ -704,6 +705,9 @@ section#feedback {
 section#feedback .container {
   padding-top: 4.72rem;
   text-align: center;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  padding-bottom: 3rem;
 }
 section#feedback .container h3 {
   color: #ffc61a;
@@ -715,7 +719,7 @@ section#feedback .container h2 {
   color: #fff;
   font-size: 2.44rem;
   padding: 0;
-  margin-bottom: 3.05rem;
+  margin-bottom: 5rem;
   text-transform: uppercase;
 }
 section#feedback .container .feedback-block {
@@ -726,9 +730,8 @@ section#feedback .container .feedback-block {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 section#feedback .container .feedback-block .comment-two {
   -webkit-transform: scale(-1, 1);
@@ -743,13 +746,16 @@ section#feedback .container .feedback-block .comment-two .comment__text {
           transform: scale(-1, 1);
 }
 section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 1.5rem;
   text-align: left;
   color: #fff;
   font-size: 1rem;
   width: 31.1rem;
-  padding-left: 3.33rem;
-  padding-top: 1.11rem;
-  padding-right: 3.05rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.5rem;
   padding-bottom: 2.77rem;
   background: url("../img/comment-bg.png") no-repeat center;
   background-size: contain;
@@ -990,6 +996,18 @@ footer p {
   #download .google-play, #download .app-store {
     width: 48% !important;
   }
+
+  #feedback .comment-one {
+    margin-right: 1rem !important;
+  }
+  #feedback .comment-two {
+    margin-left: 1rem !important;
+  }
+
+  #feedback .comment-one, #feedback .comment-two {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
 }
 @media screen and (max-width: 768px) {
   html {
@@ -1169,6 +1187,16 @@ footer p {
   #download h3 {
     font-size: 1.55rem !important;
   }
+
+  #feedback .comment-one, #feedback .comment-two {
+    background-size: 100% 100% !important;
+  }
+  #feedback .author__name {
+    font-size: 1.25rem !important;
+  }
+  #feedback .author__status {
+    font-size: 0.9rem !important;
+  }
 }
 @media screen and (max-width: 320px) {
   html {
@@ -1232,5 +1260,15 @@ footer p {
   }
   #download h3 {
     font-size: 1.5rem !important;
+  }
+
+  #feedback .comment-one, #feedback .comment-two {
+    padding-top: 1rem !important;
+    padding-bottom: 2.7rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  #feedback .comment__text {
+    font-size: 14px !important;
   }
 }
