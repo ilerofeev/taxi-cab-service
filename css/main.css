@@ -7,7 +7,7 @@
   font-family: "BebasNeue-bold", sans-serif;
 }
 
-.la-bl, section#main-page .row .logo__text, section#main-page .row .menu, section#main-page .title, section#about .about-service a, section#about .about-service h2, section#about .about-service h3, section#about .book-a-cab__form h3, section#tariffs .container h3, section#tariffs .container h2, section#tariffs .container .row .tariff__name, section#features .container h3, section#features .container h2, section#features .container .advantages__name, section#download .container h3, section#download .container h2, section#download .container .row .download-left h5, section#feedback .container h3, section#feedback .container h2, section#feedback .container .feedback-block .comment-one .author__name, section#feedback .container .feedback-block .comment-two .author__name, section#feedback .container .feedback-block .comment-one .author__status, section#feedback .container .feedback-block .comment-two .author__status, section#your-call h3, section#your-call .title__number, section#contacts .container .row .adc__item .adc__title {
+.la-bl, section#main-page .row .logo__text, section#main-page .row .menu, section#main-page .title, section#about .about-service a, section#about .about-service h2, section#about .about-service h3, section#about .book-a-cab__form h3, section#tariffs .container h3, section#tariffs .container h2, section#tariffs .container .row .tariff__name, section#features .container h3, section#features .container h2, section#features .container .advantages__name, section#download .container h3, section#download .container h2, section#download .container .row .download-left h5, section#feedback .container h3, section#feedback .container h2, section#feedback .container .feedback-block .comment-one .author__name, section#feedback .container .feedback-block .comment-two .author__name, section#feedback .container .feedback-block .comment-one .author__status, section#feedback .container .feedback-block .comment-two .author__status, section#your-call h3, section#your-call .title__number, section#contacts .container .row .contacts__item .contacts__title {
   font-family: "Lato-Black", sans-serif;
 }
 
@@ -15,19 +15,19 @@
   font-family: "Lato-Medium", sans-serif;
 }
 
-.la-re, section#about .about-service p, section#about .book-a-cab__form input::-webkit-input-placeholder, section#features .container .advantages__descr, section#download .container .row .download-left p, section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two, section#contacts .container .row .adc__item .adc__text, section#contacts .container .row .adc__item .adc__android, section#contacts .container .row .adc__item .adc__apple, footer {
+.la-re, section#about .about-service p, section#about .book-a-cab__form input::-webkit-input-placeholder, section#features .container .advantages__descr, section#download .container .row .download-left p, section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two, section#contacts .container .row .contacts__item .contacts__text, section#contacts .container .row .contacts__item .contacts__android, section#contacts .container .row .contacts__item .contacts__apple, footer {
   font-family: "Lato-Regular", sans-serif;
 }
 
-.la-re, section#about .about-service p, section#about .book-a-cab__form input:-ms-input-placeholder, section#features .container .advantages__descr, section#download .container .row .download-left p, section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two, section#contacts .container .row .adc__item .adc__text, section#contacts .container .row .adc__item .adc__android, section#contacts .container .row .adc__item .adc__apple, footer {
+.la-re, section#about .about-service p, section#about .book-a-cab__form input:-ms-input-placeholder, section#features .container .advantages__descr, section#download .container .row .download-left p, section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two, section#contacts .container .row .contacts__item .contacts__text, section#contacts .container .row .contacts__item .contacts__android, section#contacts .container .row .contacts__item .contacts__apple, footer {
   font-family: "Lato-Regular", sans-serif;
 }
 
-.la-re, section#about .about-service p, section#about .book-a-cab__form input::-ms-input-placeholder, section#features .container .advantages__descr, section#download .container .row .download-left p, section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two, section#contacts .container .row .adc__item .adc__text, section#contacts .container .row .adc__item .adc__android, section#contacts .container .row .adc__item .adc__apple, footer {
+.la-re, section#about .about-service p, section#about .book-a-cab__form input::-ms-input-placeholder, section#features .container .advantages__descr, section#download .container .row .download-left p, section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two, section#contacts .container .row .contacts__item .contacts__text, section#contacts .container .row .contacts__item .contacts__android, section#contacts .container .row .contacts__item .contacts__apple, footer {
   font-family: "Lato-Regular", sans-serif;
 }
 
-.la-re, section#about .about-service p, section#about .book-a-cab__form input::placeholder, section#features .container .advantages__descr, section#download .container .row .download-left p, section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two, section#contacts .container .row .adc__item .adc__text, section#contacts .container .row .adc__item .adc__android, section#contacts .container .row .adc__item .adc__apple, footer {
+.la-re, section#about .about-service p, section#about .book-a-cab__form input::placeholder, section#features .container .advantages__descr, section#download .container .row .download-left p, section#feedback .container .feedback-block .comment-one, section#feedback .container .feedback-block .comment-two, section#contacts .container .row .contacts__item .contacts__text, section#contacts .container .row .contacts__item .contacts__android, section#contacts .container .row .contacts__item .contacts__apple, footer {
   font-family: "Lato-Regular", sans-serif;
 }
 
@@ -790,13 +790,15 @@ section#feedback .container .feedback-block .comment-one .author__status, sectio
 }
 
 section#your-call {
-  min-height: 40vh;
   background-color: #ffc61a;
   text-align: center;
   padding-top: 2.77rem;
-  padding-bottom: 2.77rem;
+  padding-bottom: 2.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 section#your-call h3 {
+  margin: 0;
   color: #000;
   font-size: 2rem;
   text-transform: uppercase;
@@ -811,20 +813,19 @@ section#your-call .title__number {
 section#contacts {
   min-height: 80vh;
   background: url("../img/adc-bg.png") no-repeat center/cover;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 section#contacts .container {
-  padding-top: 5rem;
-  padding-bottom: 5.55rem;
+  padding-top: 3rem;
+  padding-bottom: 5.7rem;
 }
 section#contacts .container .row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-section#contacts .container .row .adc__item {
-  width: 18.3rem;
-}
-section#contacts .container .row .adc__item .adc__street, section#contacts .container .row .adc__item .adc__phone, section#contacts .container .row .adc__item .adc__mail-one, section#contacts .container .row .adc__item .adc__mail-two {
+section#contacts .container .row .contacts__item .contacts__street, section#contacts .container .row .contacts__item .contacts__phone, section#contacts .container .row .contacts__item .contacts__mail-one, section#contacts .container .row .contacts__item .contacts__mail-two {
   font-size: 1rem;
   color: #fff;
   margin-left: 2px;
@@ -840,19 +841,22 @@ section#contacts .container .row .adc__item .adc__street, section#contacts .cont
       -ms-flex-align: center;
           align-items: center;
 }
-section#contacts .container .row .adc__item .adc__street i, section#contacts .container .row .adc__item .adc__phone i, section#contacts .container .row .adc__item .adc__mail-one i, section#contacts .container .row .adc__item .adc__mail-two i {
+section#contacts .container .row .contacts__item .contacts__street i, section#contacts .container .row .contacts__item .contacts__phone i, section#contacts .container .row .contacts__item .contacts__mail-one i, section#contacts .container .row .contacts__item .contacts__mail-two i {
   margin-right: 1.5rem;
 }
-section#contacts .container .row .adc__item .adc__phone {
+section#contacts .container .row .contacts__item .contacts__phone {
   font-size: 1.33rem;
 }
-section#contacts .container .row .adc__item .adc__mail-one {
+section#contacts .container .row .contacts__item .contacts__mail-one {
+  margin-left: -2px;
+}
+section#contacts .container .row .contacts__item .contacts__mail-one .contacts__contact-text {
+  margin-left: -4px;
+}
+section#contacts .container .row .contacts__item .contacts__mail-two {
   margin-left: -1px;
 }
-section#contacts .container .row .adc__item .adc__mail-two {
-  margin-left: -1px;
-}
-section#contacts .container .row .adc__item .adc__title {
+section#contacts .container .row .contacts__item .contacts__title {
   font-size: 1.38rem;
   color: #fff;
   text-transform: uppercase;
@@ -861,19 +865,19 @@ section#contacts .container .row .adc__item .adc__title {
   border-bottom: 0.44rem solid #ffc61a;
   margin-bottom: 2.55rem;
 }
-section#contacts .container .row .adc__item .adc__text {
+section#contacts .container .row .contacts__item .contacts__text {
   font-size: 1rem;
   color: #fff;
   margin-bottom: 2rem;
 }
-section#contacts .container .row .adc__item .adc__socials {
+section#contacts .container .row .contacts__item .contacts__socials {
   color: #ffc61a;
   font-size: 1.11rem;
 }
-section#contacts .container .row .adc__item .adc__socials i {
+section#contacts .container .row .contacts__item .contacts__socials i {
   margin-right: 1rem;
 }
-section#contacts .container .row .adc__item .adc__android, section#contacts .container .row .adc__item .adc__apple {
+section#contacts .container .row .contacts__item .contacts__android, section#contacts .container .row .contacts__item .contacts__apple {
   font-size: 1.11rem;
   color: #ffc61a;
   display: -webkit-box;
@@ -887,13 +891,13 @@ section#contacts .container .row .adc__item .adc__android, section#contacts .con
       -ms-flex-align: center;
           align-items: center;
 }
-section#contacts .container .row .adc__item .adc__android .adc__android-text, section#contacts .container .row .adc__item .adc__android .adc__apple-text, section#contacts .container .row .adc__item .adc__apple .adc__android-text, section#contacts .container .row .adc__item .adc__apple .adc__apple-text {
+section#contacts .container .row .contacts__item .contacts__android .contacts__android-text, section#contacts .container .row .contacts__item .contacts__android .contacts__apple-text, section#contacts .container .row .contacts__item .contacts__apple .contacts__android-text, section#contacts .container .row .contacts__item .contacts__apple .contacts__apple-text {
   width: 9.44rem;
 }
-section#contacts .container .row .adc__item .adc__android .fa-android, section#contacts .container .row .adc__item .adc__android .fa-apple, section#contacts .container .row .adc__item .adc__apple .fa-android, section#contacts .container .row .adc__item .adc__apple .fa-apple {
+section#contacts .container .row .contacts__item .contacts__android .fa-android, section#contacts .container .row .contacts__item .contacts__android .fa-apple, section#contacts .container .row .contacts__item .contacts__apple .fa-android, section#contacts .container .row .contacts__item .contacts__apple .fa-apple {
   color: #fff;
 }
-section#contacts .container .row .adc__item .adc__android {
+section#contacts .container .row .contacts__item .contacts__android {
   margin-bottom: 0.72rem;
 }
 
@@ -906,7 +910,7 @@ footer {
 }
 footer p {
   margin: 0;
-  font-size: 0.77rem;
+  font-size: 0.8rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -1008,6 +1012,13 @@ footer p {
     margin-right: 0rem !important;
     margin-left: 0rem !important;
   }
+
+  #your-call h3 {
+    font-size: 1.6rem !important;
+  }
+  #your-call .title__number {
+    font-size: 3.2rem !important;
+  }
 }
 @media screen and (max-width: 768px) {
   html {
@@ -1105,6 +1116,10 @@ footer p {
   #download .google-play, #download .app-store {
     width: 48% !important;
   }
+
+  #contacts .contacts__item:nth-child(1), #contacts .contacts__item:nth-child(2) {
+    margin-bottom: 3.5rem !important;
+  }
 }
 @media screen and (max-width: 480px) {
   html {
@@ -1197,6 +1212,13 @@ footer p {
   #feedback .author__status {
     font-size: 0.9rem !important;
   }
+
+  #your-call h3 {
+    font-size: 1.2rem !important;
+  }
+  #your-call .title__number {
+    font-size: 2.2rem !important;
+  }
 }
 @media screen and (max-width: 320px) {
   html {
@@ -1269,6 +1291,10 @@ footer p {
     padding-right: 1.5rem !important;
   }
   #feedback .comment__text {
+    font-size: 14px !important;
+  }
+
+  #contacts .contacts__text {
     font-size: 14px !important;
   }
 }
