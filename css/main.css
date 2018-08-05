@@ -505,6 +505,8 @@ section#tariffs .container .row .tariff .tariff__price {
   font-size: 2rem;
 }
 section#tariffs .container .row .tariff:hover {
+  -webkit-transition: all 0.1s ease 50ms;
+  transition: all 0.1s ease 50ms;
   background-color: #ffc61a;
 }
 section#tariffs .container .row .tariff:hover .tariff__price {
