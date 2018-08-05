@@ -5,8 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="author" content="Ilya Erofeev">
-  <meta name="description" content="Taxi Cab Service Company Website">
+  <meta property="og:url" content="https://gambye.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Book cab now">
+  <meta property="og:description" content="Taxi Cab Service Company Website">
+  <meta property="og:site_name" content="CabHUB">
+  <link rel="shortcut icon" href="img/favicon.ico">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   <!-- Font Awesome -->
@@ -24,11 +28,11 @@
       <div class="row">
         <div class="logo">
           <a href="#">
-            <img class="logo__img" src="img/logo.png" alt="Logotype">
+            <img class="logo__img" src="img/main-logo.png" alt="Logotype">
           </a>
           <span class="logo__text">call and relax</span>
         </div>
-        <nav>
+        <nav id="main-menu">
           <ul class="menu">
             <li><a class="menu__link" href="#main-page">home</a></li>
             <li><a class="menu__link" href="#about">about</a></li>
@@ -44,15 +48,15 @@
           <div class="navigation__close">
             &times;
           </div>
-          <ul>
-            <li><a class="close-nav-btn" href="#main-page">home</a></li>
-            <li><a class="close-nav-btn" href="#about">about</a></li>
-            <li><a class="close-nav-btn" href="#tariffs">tariffs</a></li>
-            <li><a class="close-nav-btn" href="#features">features</a></li>
-            <li><a class="close-nav-btn" href="#download">download</a></li>
-            <li><a class="close-nav-btn" href="#feedback">feedback</a></li>
-            <li><a class="close-nav-btn" href="#contacts">contacts</a></li>
-          </ul>
+            <ul id="mobile-menu">
+              <li><a class="close-nav-btn" href="#main-page">home</a></li>
+              <li><a class="close-nav-btn" href="#about">about</a></li>
+              <li><a class="close-nav-btn" href="#tariffs">tariffs</a></li>
+              <li><a class="close-nav-btn" href="#features">features</a></li>
+              <li><a class="close-nav-btn" href="#download">download</a></li>
+              <li><a class="close-nav-btn" href="#feedback">feedback</a></li>
+              <li><a class="close-nav-btn" href="#contacts">contacts</a></li>
+            </ul>
         </div>
       </div>
     </div>
@@ -294,10 +298,7 @@
 
 <!-- JavaScript -->
 <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<!-- Bootstrap JS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
 <script>
   $(document).ready(function() {
     $('.nav-link').click(function() {
@@ -308,6 +309,19 @@
     });
     $('.close-nav-btn').click(function() {
       $('.navigation__mobile').toggleClass('navigation__mobile--active');
+    });
+
+    $("#main-menu").on("click","a", function (event) {
+      event.preventDefault();
+      var id = $(this).attr('href'),
+      top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 500);
+    });
+    $("#mobile-menu").on("click","a", function (event) {
+      event.preventDefault();
+      var id = $(this).attr('href'),
+      top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 500);
     });
   });
 </script>

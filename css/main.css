@@ -157,7 +157,6 @@ section#main-page .row .navigation__mobile {
   background-color: #ffc61a;
   height: 100vh;
   width: 100%;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,10 +166,10 @@ section#main-page .row .navigation__mobile {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: -webkit-transform 0.75s ease 50ms;
-  transition: -webkit-transform 0.75s ease 50ms;
-  transition: transform 0.75s ease 50ms;
-  transition: transform 0.75s ease 50ms, -webkit-transform 0.75s ease 50ms;
+  -webkit-transition: -webkit-transform 0s ease 50ms;
+  transition: -webkit-transform 0s ease 50ms;
+  transition: transform 0s ease 50ms;
+  transition: transform 0s ease 50ms, -webkit-transform 0s ease 50ms;
 }
 section#main-page .row .navigation__mobile ul {
   padding: 0;
@@ -185,8 +184,9 @@ section#main-page .row .navigation__mobile ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
 }
 section#main-page .row .navigation__mobile ul a {
@@ -196,6 +196,10 @@ section#main-page .row .navigation__mobile ul a {
   font-size: 2rem;
   text-decoration: none;
   letter-spacing: 0.05rem;
+}
+section#main-page .row .navigation__mobile ul a:hover {
+  -webkit-transition: all 0.1s ease 50ms;
+  transition: all 0.1s ease 50ms;
 }
 section#main-page .row .navigation__mobile--active {
   -webkit-transform: translateX(0%);
@@ -223,8 +227,8 @@ section#main-page .row .menu__link {
   border: 1px solid #ffc61a;
   border-radius: 1.1rem;
   border-color: transparent;
-  -webkit-transition: all 10ms ease-in-out 50ms;
-  transition: all 10ms ease-in-out 50ms;
+  -webkit-transition: all 0.1s ease 50ms;
+  transition: all 0.1s ease 50ms;
 }
 section#main-page .row .menu__link:hover {
   color: #000;
@@ -516,7 +520,7 @@ section#tariffs .container .row .tariff:hover::after, section#tariffs .container
 
 section#features {
   min-height: 100vh;
-  background: url("../img/choose-bg.png") no-repeat center;
+  background: url("../img/features-bg.png") no-repeat center;
   background-size: cover;
   padding-top: 2.61rem;
   padding-bottom: 2.61rem;
@@ -694,13 +698,13 @@ section#download .container .row .download-right {
   margin-left: auto;
   width: 23.7rem;
   height: 25rem;
-  background: url("../img/mobile-app.png") no-repeat 0% -36%/cover;
+  background: url("../img/download-mobile.png") no-repeat 0% -36%/cover;
   margin-bottom: 0;
 }
 
 section#feedback {
   min-height: 85vh;
-  background: url("../img/comments-bg.png") no-repeat center/cover;
+  background: url("../img/feedback-bg.png") no-repeat center/cover;
 }
 section#feedback .container {
   padding-top: 4.72rem;
@@ -812,7 +816,7 @@ section#your-call .title__number {
 
 section#contacts {
   min-height: 80vh;
-  background: url("../img/adc-bg.png") no-repeat center/cover;
+  background: url("../img/contacts-bg.png") no-repeat center/cover;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -937,11 +941,8 @@ footer p {
   #main-page .row .logo__text {
     display: none;
   }
-  #main-page .row nav {
-    margin-bottom: 1rem;
-  }
-  #main-page .row nav .menu {
-    font-size: 0.94rem;
+  #main-page .row .menu {
+    font-size: 0.92rem !important;
   }
   #main-page .car {
     height: 11vh !important;
