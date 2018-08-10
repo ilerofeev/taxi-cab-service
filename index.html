@@ -23,6 +23,7 @@
 </head>
 <body>
 
+
 <!-- Main-page -->
 <section id="main-page">
   <header>
@@ -44,20 +45,20 @@
             <li><a class="menu__link" href="#feedback">feedback</a></li>
             <li><a class="menu__link" href="#contacts">contacts</a></li>
           </ul>
-          <div class="nav-link fa fa-bars"></div>
+          <div class="hamburger fa fa-bars"></div>
         </nav>
         <div class="navigation__mobile">
           <div class="navigation__close">
             &times;
           </div>
             <ul id="mobile-menu">
-              <li><a class="close-nav-btn" href="#main-page">home</a></li>
-              <li><a class="close-nav-btn" href="#about">about</a></li>
-              <li><a class="close-nav-btn" href="#tariffs">tariffs</a></li>
-              <li><a class="close-nav-btn" href="#features">features</a></li>
-              <li><a class="close-nav-btn" href="#download">download</a></li>
-              <li><a class="close-nav-btn" href="#feedback">feedback</a></li>
-              <li><a class="close-nav-btn" href="#contacts">contacts</a></li>
+              <li><a class="mobile-menu-link" href="#main-page">home</a></li>
+              <li><a class="mobile-menu-link" href="#about">about</a></li>
+              <li><a class="mobile-menu-link" href="#tariffs">tariffs</a></li>
+              <li><a class="mobile-menu-link" href="#features">features</a></li>
+              <li><a class="mobile-menu-link" href="#download">download</a></li>
+              <li><a class="mobile-menu-link" href="#feedback">feedback</a></li>
+              <li><a class="mobile-menu-link" href="#contacts">contacts</a></li>
             </ul>
         </div>
       </div>
@@ -82,21 +83,21 @@
         <h3>best in city</h3>
         <h2>Trusted Cab Servise in New York</h2>
         <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.</p>
-        <a href="#" class="read-more">Read More </a>
+        <a href="#" class="read-more-btn">Read More </a>
       </div>
       <div class="book-a-cab col-12 col-md-6">
         <div class="book-a-cab__form">
           <h3>book a <span>cab</span></h3>
-          <div class="book-a-cab__inputs">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Phone">
-            <input type="text" placeholder="When">
-            <input type="text" placeholder="Time">
-            <input type="text" placeholder="Start">
-            <input type="text" placeholder="End">
-            <input type="text" placeholder="Choose Vehicle" class="Choose">
-            <input class="submit" type="submit" value="Submit">
-          </div>
+          <form action="#">
+            <input type="text" placeholder="Name" name="Name" required>
+            <input type="tel" placeholder="Phone" name="Phone"required>
+            <input type="text" placeholder="When" name="When"required>
+            <input type="text" placeholder="Time" name="Time"required>
+            <input type="text" placeholder="Start" name="Start"required>
+            <input type="text" placeholder="End" name="end" required>
+            <input type="text" placeholder="Choose Vehicle" name="Choose" class="vehicle" required>
+            <input class="submit" type="submit" value="Submit" required>
+          </form>
         </div>
       </div>
     </div>
@@ -109,31 +110,31 @@
     <h3>our</h3>
     <h2>tariffs</h2>
     <div class="row">
-      <div class="tariff-overlay col-12 col-md-6 col-lg-4">
+      <div class="wrapper col-12 col-md-6 col-lg-4">
         <div class="tariff">
           <div class="tariff__img"></div>
           <h4 class="tariff__name">Economy Class</h4>
           <p class="tariff__description">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
           <h3 class="tariff__price">$1,5/mi</h3>
-          <a href="" class="read-more">read more</a>
+          <a href="" class="read-more-btn">read more</a>
         </div>
       </div>
-      <div class="tariff-overlay col-12 col-md-6 col-lg-4">
+      <div class="wrapper col-12 col-md-6 col-lg-4">
         <div class="tariff">
           <div class="tariff__img"></div>
           <h4 class="tariff__name">Standard Class</h4>
           <p class="tariff__description">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
           <h3 class="tariff__price">$1,5/mi</h3>
-          <a href="" class="read-more">read more</a>
+          <a href="" class="read-more-btn">read more</a>
         </div>
       </div>
-      <div class="tariff-overlay col- col-md-6 col-lg-4">
+      <div class="wrapper col-12 col-md-6 col-lg-4">
         <div class="tariff">
           <div class="tariff__img"></div>
           <h4 class="tariff__name">Business Class</h4>
           <p class="tariff__description">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
           <h3 class="tariff__price">$1,5/mi</h3>
-          <a href="" class="read-more">read more</a>
+          <a href="" class="read-more-btn">read more</a>
         </div>
       </div>
     </div>
@@ -143,43 +144,45 @@
 <!-- Features -->
 <section id="features">
   <div class="container">
-      <h3>we do best</h3>
-      <h2>than you wish</h2>
-    <div class="row advantages">
-      <div class="advantages__col-one">
-        <div class="advantages__item">
-          <div class="advantages__icon adv-icon-one"></div>
-          <div class="advantages__text-overlay">
-            <div class="advantages__name">Home Pickup</div>
-            <div class="advantages__descr">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
+    <h3>we do best</h3>
+    <h2>than you wish</h2>
+    <div class="row">
+      <div class="features">
+        <div class="features__col-one">
+          <div class="features__item">
+            <div class="features__icon adv-icon-one"></div>
+            <div class="features__text-wrapper">
+              <div class="features__name">Home Pickup</div>
+              <div class="features__descr">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features__icon adv-icon-two"></div>
+            <div class="features__text-wrapper">
+              <div class="features__name">Bonuses for ride</div>
+              <div class="features__descr">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
+            </div>
           </div>
         </div>
-        <div class="advantages__item">
-          <div class="advantages__icon adv-icon-two"></div>
-          <div class="advantages__text-overlay">
-            <div class="advantages__name">Bonuses for ride</div>
-            <div class="advantages__descr">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
+        <div class="features__col-two">
+          <div class="features__item">
+            <div class="features__icon adv-icon-three"></div>
+            <div class="features__text-wrapper">
+              <div class="features__name">Fast booking</div>
+              <div class="features__descr">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="advantages__col-two">
-        <div class="advantages__item">
-          <div class="advantages__icon adv-icon-three"></div>
-          <div class="advantages__text-overlay">
-            <div class="advantages__name">Fast booking</div>
-            <div class="advantages__descr">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
-          </div>
-        </div>
-        <div class="advantages__item">
-          <div class="advantages__icon adv-icon-four"></div>
-          <div class="advantages__text-overlay">
-            <div class="advantages__name">GPS searching</div>
-            <div class="advantages__descr">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
+          <div class="features__item">
+            <div class="features__icon adv-icon-four"></div>
+            <div class="features__text-wrapper">
+              <div class="features__name">GPS searching</div>
+              <div class="features__descr">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <a class="read-more" href="#">read more</a>
+    <a class="read-more-btn" href="#">read more</a>
   </div>
 </section> <!-- Features -->
 
@@ -192,7 +195,7 @@
       <div class="download-left col-12 col-sm-9 col-md-6">
         <h5>Downlaod the Cab voucher app free! Get Exciting New Offers</h5>
         <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
-        <div class="downloads">
+        <div class="download-links">
           <div class="google-play"></div>
           <div class="app-store"></div>
         </div>
@@ -208,33 +211,35 @@
   <div class="container">
     <h3>Happy Client's</h3>
     <h2>Testimonials</h2>
-    <div class="row feedback-block">
-      <div class="comment-one">
-        <p class="comment__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur. Quisque sollicitudin feugiat risus.</p>
-        <div class="comment__author">
-          <div class="author__avatar"></div>
-          <div class="author__text">
-            <h4 class="author__name">John Doe</h4>
-            <h4 class="author__status">Business man</h4>
-          </div>
-        </div>
-      </div>
-      <div class="comment-two">
-        <p class="comment__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur. Quisque sollicitudin feugiat risus.</p>
-        <div class="comment__author">
-          <div class="author__avatar"></div>
-          <div class="author__text">
-            <h4 class="author__name">John Doe</h4>
-            <h4 class="author__status">Business man</h4>
-          </div>
-        </div>
-      </div>
-    </div>
+		<div class="row">
+			<div class="feedback-wrapper">
+			  <div class="comment-one">
+			    <p class="comment__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur. Quisque sollicitudin feugiat risus.</p>
+			    <div class="comment__author">
+			      <div class="author__avatar"></div>
+			      <div class="author__text">
+			        <h4 class="author__name">John Doe</h4>
+			        <h4 class="author__status">Business man</h4>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="comment-two">
+			    <p class="comment__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur. Quisque sollicitudin feugiat risus.</p>
+			    <div class="comment__author">
+			      <div class="author__avatar"></div>
+			      <div class="author__text">
+			        <h4 class="author__name">John Doe</h4>
+			        <h4 class="author__status">Business man</h4>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
   </div>
 </section> <!-- Feedback -->
 
 <!-- Your call -->
-<section id="your-call">
+<section id="call">
   <h3>We are Ready to Take Your Call 24 Hours, 7 Days!</h3>
   <a href="tel:+12345678900" class="title__number">+123 4567 8900</a>
 </section> <!-- Your call -->
@@ -270,22 +275,21 @@
       <div class="contacts__item col-11 col-sm-6 col-md-4 col-lg-4">
         <div class="contacts__title">Contact</div>
         <div class="contacts__info">
-
           <div class="contacts__street">
             <i class="fa fa-map-marker"></i>
-            <div class="contacts__contact-text">+123, Main Street, Your City, <br> New York, USA 789456</div>
+            <div class="contacts__info-text">+123, Main Street, Your City, <br> New York, USA 789456</div>
           </div>
           <div class="contacts__phone">
             <i class="fa fa-mobile"></i>
-            <div class="contacts__contact-text">+123 4567 8900</div>
+            <a class="contacts__info-text" href="tel:+12345678900">+123 4567 8900</div>
           </div>
           <div class="contacts__mail-one">
             <i class="fa fa-envelope"></i>
-            <div class="contacts__contact-text">free@psdfreebies.com</div>
+            <div class="contacts__info-text">free@psdfreebies.com</div>
           </div>
           <div class="contacts__mail-two">
             <i class="fa fa-location-arrow"></i>
-            <div class="contacts__contact-text">www.psdfreebies.com</div>
+            <div class="contacts__info-text">www.psdfreebies.com</div>
           </div>
         </div>
       </div>
@@ -294,7 +298,7 @@
 </section> <!-- Contacts -->
 
 <!-- Footer -->
-<footer>
+<footer id="footer">
   <p>Copyright © 2015 PSDfreebies.com</p>
 </footer> <!-- Footer -->
 
@@ -303,13 +307,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
 <script>
   $(document).ready(function() {
-    $('.nav-link').click(function() {
+    $('.hamburger').click(function() {
       $('.navigation__mobile').toggleClass('navigation__mobile--active');
     });
     $('.navigation__close').click(function() {
       $('.navigation__mobile').toggleClass('navigation__mobile--active');
     });
-    $('.close-nav-btn').click(function() {
+    $('.mobile-menu-link').click(function() {
       $('.navigation__mobile').toggleClass('navigation__mobile--active');
     });
 
