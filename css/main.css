@@ -99,7 +99,6 @@ html {
 section#main-page {
   background: url("../img/main-bg.png") no-repeat center top/cover;
   height: 100vh;
-  min-height: 600px;
   color: #fff;
   text-transform: uppercase;
   padding-top: 1.38rem;
@@ -524,7 +523,6 @@ section#tariffs .container .row .wrapper .tariff:hover::after, section#tariffs .
 }
 
 section#features {
-  min-height: 100vh;
   background: url("../img/features-bg.png") no-repeat center;
   background-size: cover;
   padding-top: 2.61rem;
@@ -709,7 +707,6 @@ section#download .container .row .download-right {
 }
 
 section#feedback {
-  min-height: 85vh;
   background: url("../img/feedback-bg.png") no-repeat center/cover;
 }
 section#feedback .container {
@@ -819,7 +816,6 @@ section#call .title__number {
 }
 
 section#contacts {
-  min-height: 80vh;
   background: url("../img/contacts-bg.png") no-repeat center/cover;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -932,6 +928,16 @@ footer#footer p {
   padding-bottom: 1rem;
 }
 
+@media screen and (min-width: 1600px) {
+  section#main-page .title {
+    margin-top: 25vh;
+  }
+}
+@media screen and (min-width: 1920px) {
+  section#main-page .title {
+    margin-top: 30vh;
+  }
+}
 @media screen and (max-width: 992px) {
   html {
     font-size: 17px;
