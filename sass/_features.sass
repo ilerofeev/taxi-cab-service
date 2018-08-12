@@ -1,0 +1,79 @@
+section#features
+	background: url("../img/features-bg.png") no-repeat center
+	background-size: cover
+	padding-top: 2.61rem
+	padding-bottom: 2.61rem
+	.container
+		padding: 2rem
+		text-align: center
+		.row
+			justify-content: center
+			align-items: center
+			.features
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				color: #fff
+				&__col-one, &__col-two
+					width: 42%
+					display: flex
+					flex-direction: column
+					text-align: left
+				&__item
+					display: flex
+					flex-direction: row
+					align-items: center
+					&:nth-child(1)
+						margin-bottom: 4.66rem
+					& .features__icon
+						min-width: 5rem
+						min-height: 5rem
+						background-color: $yellow-main
+						border-radius: 50%
+						margin-right: 1.55rem
+						position: relative
+						&:after
+							position: absolute
+							top: 1.27rem
+							right: 1.7rem
+							font-size: 1.66rem
+							content: '\f015'
+							color: #000
+							display: block
+							font-family: 'FontAwesome'
+					.adv-icon-two:after
+						content: '\f1b9'
+						right: 1.6rem
+					.adv-icon-three:after
+						content: '\f017'
+						right: 1.8rem
+					.adv-icon-four:after
+						content: '\f002'
+				&__descr
+					@extend .la-re
+					font-size: 1rem
+				&__name
+					@extend .la-bl
+					font-size: 1.38rem
+					text-transform: uppercase
+					color: $yellow-main
+					margin-bottom: 1.33rem
+		.read-more-btn
+			color: #000
+			background-color: $yellow-main
+			margin-left: auto
+			margin-right: auto
+			margin-top: 4.44rem
+		h3
+			color: $yellow-main
+			@extend .la-bl
+			font-size: 2rem
+			margin-bottom: 0
+		h2
+			color: #fff
+			@extend .la-bl
+			font-size: 2.44rem
+			padding: 0
+			margin-bottom: 3.88rem
+		h2, h3, h4, a
+			text-transform: uppercase

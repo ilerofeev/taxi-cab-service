@@ -1,0 +1,84 @@
+section#tariffs
+	padding-top: 2.61rem
+	padding-bottom: 3.61rem
+	.container
+		text-align: center
+		h3
+			color: $yellow-main
+			@extend .la-bl
+			font-size: 2rem
+			margin-bottom: 0
+		h2
+			color: #000
+			@extend .la-bl
+			font-size: 2.44rem
+			padding: 0
+			margin-top: -.55rem
+			margin-bottom: 7.94rem
+		h2, h3, h4, a
+			text-transform: uppercase
+		.row
+			margin-top: -1rem
+			.wrapper
+				padding: 0
+				.tariff
+					margin: 0 auto
+					background-color: $tariff-bg
+					padding-top: 1.88rem
+					padding-bottom: 0.4rem
+					width: 90%
+					position: relative
+					padding-left: 1rem
+					padding-right: 1rem
+					&__name
+						@extend .la-bl
+						font-size: 1.66rem
+						color: #000
+						margin-top: 4.4rem
+					&__description
+						font-size: 1rem
+						color: $black-darken
+					.read-more-btn
+						margin: 1.5rem auto
+						color: #000
+						background-color: $yellow-main
+					&__img
+						position: absolute
+						width: 100%
+						height: 10rem
+						background: url("../img/tariffs-car.png") no-repeat center
+						background-size: contain
+						top: -20%
+						left: 50%
+						transform: translateX(-50%)
+					&:before
+						position: absolute
+						bottom: 0
+						right: 0
+						content: ''
+						border-bottom: 4.2rem solid #1b1b1b
+						border-left: 4.2rem solid transparent
+						display: none
+					&:after
+						position: absolute
+						right: 0.4rem
+						bottom: 0rem
+						z-index: 1
+						font-size: 1.5rem
+						content: '\f005'
+						color: $yellow-main
+						font-family: 'FontAwesome'
+						display: none
+					.tariff__price
+						font-size: 2rem
+					& *
+						transition: all 1s
+					&:hover
+						background-color: $yellow-main
+						.tariff__price
+							color: #131313
+						.read-more-btn
+							color: #fff
+							background-color: #1b1b1b
+						&::after, &::before
+							display: block

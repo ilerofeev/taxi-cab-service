@@ -1,0 +1,68 @@
+section#feedback
+	background: url("../img/feedback-bg.png") no-repeat center / cover
+	.container
+		padding-top: 4.72rem
+		text-align: center
+		padding-left: 1.8rem
+		padding-right: 1.8rem
+		padding-bottom: 3rem
+		h3
+			color: $yellow-main
+			@extend .la-bl
+			font-size: 2rem
+			margin-bottom: 0
+			text-transform: uppercase
+		h2
+			color: #fff
+			@extend .la-bl
+			font-size: 2.44rem
+			padding: 0
+			margin-bottom: 5rem
+			text-transform: uppercase
+		.row
+			.feedback-wrapper
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-around
+				.comment-two
+					transform: scale(-1, 1)
+					.comment__author
+						transform: scale(-1, 1)
+					.comment__text
+						transform: scale(-1, 1)
+				.comment-one, .comment-two
+					margin-right: 0.5rem
+					margin-left: 0.5rem
+					margin-bottom: 1.5rem
+					text-align: left
+					color: #fff
+					@extend .la-re
+					font-size: 1rem
+					max-width: 31.1rem
+					padding-left: 2rem
+					padding-right: 2rem
+					padding-top: 1.5rem
+					padding-bottom: 2.77rem
+					background: url("../img/comment-bg.png") no-repeat center
+					background-size: contain
+					.comment__text
+						font-size: 1rem
+					.comment__author
+						display: flex
+						align-items: center
+					.author__avatar
+						background: url("../img/author-avatar.png") no-repeat center
+						background-size: cover
+						width: 4.11rem
+						height: 4.11rem
+						margin-right: 1.11rem
+					.author__name
+						@extend .la-bl
+						font-size: 1.38rem
+						text-transform: uppercase
+						color: $yellow-main
+					.author__status
+						@extend .la-bl
+						font-size: 1rem
+						text-transform: uppercase
+						color: #fff

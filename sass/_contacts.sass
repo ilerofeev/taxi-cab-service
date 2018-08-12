@@ -1,0 +1,67 @@
+section#contacts
+	background: url("../img/contacts-bg.png") no-repeat center / cover
+	padding-left: 1rem
+	padding-right: 1rem
+	.container
+		padding-top: 3rem
+		padding-bottom: 5.7rem
+		.row
+			justify-content: center
+			.contacts__item
+				.contacts__street, .contacts__phone, .contacts__mail-one, .contacts__mail-two
+					font-size: 1rem
+					color: #fff
+					margin-left: 2px
+					margin-bottom: 1.11rem
+					display: flex
+					flex-direction: row
+					align-items: center
+					i
+						margin-right: 1.5rem
+				.contacts__info-text
+					color: #fff
+					text-decoration: none
+				.contacts__phone
+					font-size: 1.33rem
+				.contacts__mail-one
+					margin-left: -2px
+					.contacts__text
+						margin-left: -4px
+				.contacts__mail-two
+					margin-left: -1px
+				.contacts__title
+					font-size: 1.38rem
+					color: #fff
+					text-transform: uppercase
+					@extend .la-bl
+					text-align: left
+					padding-bottom: 2.05rem
+					border-bottom: 0.44rem solid $yellow-main
+					margin-bottom: 2.55rem
+				.contacts__text
+					font-size: 1rem
+					@extend .la-re
+					color: #fff
+					margin-bottom: 2rem
+				.contacts__socials
+					> *
+						cursor: pointer
+					color: $yellow-main
+					font-size: 1.11rem
+					i
+						margin-right: 1rem
+				.contacts__android, .contacts__apple
+					font-size: 1.11rem
+					@extend .la-re
+					color: $yellow-main
+					display: flex
+					flex-direction: row
+					align-items: center
+					.contacts__android-text, .contacts__apple-text
+						width: 9.44rem
+						cursor: pointer
+					.fa-android, .fa-apple
+						color: #fff
+						cursor: pointer
+				.contacts__android
+					margin-bottom: 0.72rem

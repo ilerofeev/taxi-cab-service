@@ -1,0 +1,366 @@
+@media screen and (min-width:1600px)
+	
+	section#main-page
+		.title
+			margin-top: 25vh
+
+@media screen and (min-width:1920px)
+	
+	section#main-page
+		.title
+			margin-top: 30vh
+
+@media screen and (max-width:992px)
+
+	html
+		font-size: 17px
+
+	section#main-page
+		.container
+			.row
+				flex-direction: column
+				justify-content: center
+				.logo
+					margin-top: 0.55rem
+					margin-bottom: 1.6rem
+					margin-left: auto
+					&__text
+						display: none
+				#main-menu
+					.menu
+						font-size: 0.92rem
+		.car
+			height: 11vh
+
+	section#about
+		.container
+			.row
+				.about-service
+					h2
+						font-size: 2.3rem
+
+	section#tariffs
+		.container
+			.row
+				justify-content: center
+				align-items: center
+				.wrapper
+					.tariff
+						width: 80%
+						max-width: 20rem
+						margin-bottom: 8rem
+						&__name
+							margin-top: 4.2rem
+						&__description
+							padding: 0.5rem 0rem
+					&:nth-child(3)
+						.tariff
+							margin-bottom: 1rem
+					
+	section#features
+		.container
+			.row
+				.features
+					flex-direction: column
+					align-items: center
+					&__col-one, &__col-two
+						width: 60%
+					&__col-one
+						margin-bottom: 4.66rem
+
+	section#download
+		.container
+			.row
+				.download
+					&-left
+						padding-top: 1.5rem
+					&-right
+						width: 18.96rem
+						height: 20rem
+					&-links
+						margin-top: 2rem
+						.google-play, .app-store
+							width: 48%
+
+	section#feedback
+		.container
+			.row
+				padding: 0
+				.feedback-wrapper
+					.comment-one, .comment-two
+						margin-right: 0
+						margin-left: 0
+						background-size: 100% 100%
+
+	section#call
+		h3
+			font-size: 1.6rem
+		.title__number
+			font-size: 3.2rem
+
+@media screen and (max-width:768px)
+
+	html
+		font-size: 16px
+
+	section#main-page
+		.container
+			.row
+				.logo
+					width: 7.2rem
+					margin-bottom: 4rem
+				#main-menu
+					.menu
+						display: none
+					.hamburger
+						display: block
+		.car
+			display: none
+		.title
+			margin-top: 7rem
+			&__text
+				margin-bottom: -0.1rem
+
+	section#about
+		.container
+			.row
+				text-align: center
+				flex-direction: column
+				.about-service
+					.read-more-btn
+						margin: 0 auto
+					h2
+						font-size: 2.1rem
+				.book-a-cab
+					margin-top: 4rem
+					&__form
+						margin: 0 auto
+						h3
+							padding-left: 0
+
+	section#tariffs
+		.container
+			.row
+				.wrapper
+					.tariff
+						width: 80%
+						max-width: 20rem
+						&__name
+							margin-top: 4.2rem
+						&__description
+							padding: 0.5rem 0rem
+
+	section#features
+		.container
+			.row
+				.features
+					&__col-one, &__col-two
+						width: 25rem
+
+	section#download
+		.container
+			padding-bottom: 2.61rem
+			h2
+				font-size: 1.8rem
+			h3
+				font-size: 1.6rem
+			.row	
+				position: relative
+				.download
+					&-links
+						margin-top: 2.2rem
+						.google-play, .app-store
+							width: 48%
+					&-left
+						text-align: center
+						width: 30%
+						margin: 0 auto
+						padding-left: 1.5rem	
+						padding-right: 1.5rem	
+					&-right
+						display: none
+
+	section#feedback
+		.container
+			.row
+				.feedback-wrapper
+					.comment-one, .comment-two
+						margin-left: 0
+						margin-right: 0
+
+	section#contacts
+		.container
+			.row
+				.contacts__item:nth-child(1), .contacts__item:nth-child(2)
+					margin-bottom: 3.5rem
+
+@media screen and (max-width:480px)
+
+	html
+		font-size: 15px
+	section#main-page
+		.title
+			&__text
+				font-size: 1.5rem
+				margin-top: 8.5rem
+				margin-bottom: 0.1rem
+			&__number
+				font-size: 2.5rem
+
+	section#about
+		.container
+			.row
+				.about-service
+					h3
+						font-size: 1.8rem
+					h2
+						font-size: 2rem
+				.book-a-cab
+					&__form
+						width: 19rem
+						h3
+							padding-left: 0
+						input
+							width: 91%
+						.submit
+							padding: 0
+							width: 91%
+
+	section#tariffs
+		.container
+			.row
+				.wrapper
+					.tariff
+						width: 90%
+						&__name
+							margin-top: 4.2rem
+						&__description
+							padding: 0.5rem 0rem
+
+	section#features
+		.container
+			padding: 1rem
+			.row
+				.features
+					&__col-one, &__col-two
+						width: 85%
+
+	section#download
+		.container
+			h2
+				font-size: 1.65rem
+			h3
+				font-size: 1.55rem
+			.row
+				.download
+					&-links
+						flex-direction: column
+						align-items: center
+						.google-play
+							margin-bottom: 1.5rem
+						.google-play, .app-store
+							width: 11rem
+
+		.container
+			.row
+				.feedback-wrapper
+					.comment-one, .comment-two
+						background-size: 100% 100%
+						.author__text
+							.author__name
+								font-size: 1.25rem
+							.author__status
+								font-size: 0.9rem
+
+	section#call
+		h3
+			font-size: 1.2rem
+		.title__number
+			font-size: 2.2rem
+
+@media screen and (max-width:320px)
+
+	html
+		font-size: 14px
+
+	section#main-page
+		.title
+			&__text
+				margin-top: 10rem
+				margin-bottom: 0.2rem
+
+	section#about
+		.container
+			.row
+				text-align: center
+				.about-service
+					h3
+						font-size: 1.6rem
+					h2
+						font-size: 1.8rem
+					.read-more-btn
+						padding-bottom: 0.2rem
+				.book-a-cab
+					&__form
+						width: 100%
+						.submit
+							padding-bottom: 0.2rem
+
+	section#tariffs
+		.container
+			.row
+				.wrapper
+					.tariff
+						width: 90%
+						&__name
+							margin-top: 4rem
+						&__description
+							font-size: 14px
+							padding: 1.2rem 0rem
+						&__price
+							margin-top: -0.5rem
+
+	section#features
+		.container
+			h2
+				font-size: 1.8rem
+			h3
+				font-size: 1.6rem
+			.row
+				.features
+					.features__col-one, .features__col-two
+						.features__item
+							&__icon
+								display: none
+							.features__text-wrapper
+								&__descr
+									font-size: 14px
+									text-align: center
+								&__name
+									text-align: center
+
+	section#download
+		.container
+			h2
+				font-size: 1.6rem
+			h3
+				font-size: 1.5rem
+
+	section#feedback
+		.container
+			.row
+				.feedback-wrapper
+					.comment-one, .comment-two
+						padding-top: 1rem
+						padding-bottom: 2.7rem
+						padding-left: 1.5rem
+						padding-right: 1.5rem
+						.comment__text
+							font-size: 14px
+
+	section#contacts
+		.container
+			.row
+				.contacts__item
+					.contacts__text
+						font-size: 14px

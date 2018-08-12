@@ -1,0 +1,134 @@
+section#main-page
+	background: url("../img/main-bg.png") no-repeat center top / cover
+	height: 100vh
+	color: #fff
+	text-transform: uppercase
+	padding-top: 1.38rem
+	padding-bottom: 0
+	text-align: center
+	position: relative
+	.container
+		.row
+			align-items: center
+			margin: 0
+			nav
+				text-align: right
+			.logo
+				display: flex
+				flex-direction: column
+				cursor: pointer
+				width: 6.85rem
+				margin-right: auto
+				&__img
+					width: 100%
+					height: auto
+					padding-right: .02rem
+				&__text
+					font-size: 0.7rem
+					letter-spacing: 1.3px
+					@extend .la-bl
+					margin-top: 0.38rem
+			.navigation
+				&__close
+					position: absolute
+					top: 0.8rem
+					right: 2.3rem
+					font-size: 3rem
+					color: #000
+					&:hover
+						cursor: pointer
+				&__mobile
+					transform: translateX(-100%)
+					position: fixed
+					left: 0
+					top: 0
+					background-color: $yellow-main
+					height: 100vh
+					width: 100%
+					display: flex
+					justify-content: center
+					align-items: center
+					transition: transform 0s ease 50ms
+					ul
+						padding: 0
+						height: 75%
+						display: flex
+						flex-direction: column
+						align-items: center
+						justify-content: space-between
+						list-style: none
+						a
+							display: block
+							color: #000
+							text-transform: uppercase
+							font-size: 2rem
+							text-decoration: none
+							letter-spacing: 0.05rem
+						a:hover
+							transition: all 0.05s ease 50ms 
+					&--active
+						transform: translateX(0%)
+						transition: transform 0.75s ease 50ms
+						z-index: 2
+						a:hover
+							color: #fff
+			.menu
+				text-align: center
+				padding: 0
+				margin: auto 0
+				font-size: 1rem
+				@extend .la-bl
+				&__link
+					text-decoration: none
+					padding: 0.11rem 0.8rem
+					cursor: pointer
+					color: #fff
+					border: 1px solid $yellow-main 
+					border-radius: 1.1rem
+					border-color: transparent
+					transition: all 0.1s ease 50ms
+					&:hover
+						color: #000
+						background-color: $yellow-main
+				li
+					display: inline-block
+				li:nth-child(1)
+					.menu__link
+						margin-left: 0
+			.hamburger
+				padding: 0
+				display: none
+				position: absolute
+				top: 1.9rem
+				right: 2.1rem
+				font-size: 1.9rem
+				width: 1.7rem
+				height: 1.8rem
+				&:hover
+					cursor: pointer
+	.title
+		text-align: center
+		margin-top: 4rem
+		@extend .la-bl
+		&__text
+			color: $yellow-main
+			font-size: 1.7rem
+			margin-bottom: -10px
+		&__number
+			color: #fff
+			font-size: 2.9rem
+			text-decoration: none
+	.car
+		position: absolute
+		bottom: 0
+		min-height: 4.3rem
+		width: 100%
+		background-color: #ffc61a
+		.car-img
+			background: url("../img/main-car.png") no-repeat center / cover
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+			width: 30rem
+			height: 17.7rem
