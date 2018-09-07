@@ -1,2 +1,2 @@
-# CabHUB
-> Taxi Cab Service Company Website
+# Taxi Cab Service Company Website
+Адаптивная, кроссбраузерная верстка из PSD макета
