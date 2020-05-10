@@ -1,10 +1,6 @@
 # Taxi cab service layout
 Taxi cab service layout it's adaptive and crossbrowser company website layout based on PSD-template.
 
-<p align="center">
-  <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width="72" height="72">
-</p>
-
 ## Quick Start
 
 1. Download and unzip [taxi-cab-service.zip](https://github.com/ilerofeev/taxi-cab-service/archive/master.zip) template archive.
