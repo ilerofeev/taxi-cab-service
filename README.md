@@ -1,5 +1,5 @@
 # Taxi cab service
-Taxi cab service it's adaptive and crossbrowser company website layout based on PSD-template.
+Taxi cab service is an adaptive and crossbrowser company website layout based on PSD-template.
 
 ## Quick Start
 
